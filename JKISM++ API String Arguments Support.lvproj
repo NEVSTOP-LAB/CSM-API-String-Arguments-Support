@@ -10,8 +10,8 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="JKISM++ API String Arguments Support.lvlib" Type="Library" URL="../JKISM++ API String Arguments Support.lvlib"/>
-		<Item Name="TestCases.vi" Type="VI" URL="../_TEST/TestCases.vi"/>
+		<Item Name="JKISM++ API String Arguments Support.lvlib" Type="Library" URL="../API-String-Arugments-Support/JKISM++ API String Arguments Support.lvlib"/>
+		<Item Name="TestCases.vi" Type="VI" URL="../Example/TestCases.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="1D Array to String__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/string/string.llb/1D Array to String__ogtk.vi"/>
