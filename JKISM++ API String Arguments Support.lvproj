@@ -27,6 +27,7 @@
 				<Item Name="Clear All Error_nevstop.vi" Type="VI" URL="/&lt;userlib&gt;/NEVSTOP-Programming-Palette/Dialog &amp; Interface/Clear All Error_nevstop.vi"/>
 				<Item Name="Cluster to Array of VData__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Cluster to Array of VData__ogtk.vi"/>
 				<Item Name="ClusterToArray_nevstop.vi" Type="VI" URL="/&lt;userlib&gt;/NEVSTOP-Programming-Palette/Data/ClusterToArray_nevstop.vi"/>
+				<Item Name="Compare Two Numbers_nevstop.vim" Type="VI" URL="/&lt;userlib&gt;/NEVSTOP-Programming-Palette/Comparison/Compare Two Numbers_nevstop.vim"/>
 				<Item Name="Concatenate Strings If not Empty_nevstop.vi" Type="VI" URL="/&lt;userlib&gt;/NEVSTOP-Programming-Palette/String/Concatenate Strings If not Empty_nevstop.vi"/>
 				<Item Name="Data To SingleElementsArray_nevstop.vi" Type="VI" URL="/&lt;userlib&gt;/NEVSTOP-Programming-Palette/Data/Data To SingleElementsArray_nevstop.vi"/>
 				<Item Name="End of Line Constant (bug fix).vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/string/string.llb/End of Line Constant (bug fix).vi"/>
