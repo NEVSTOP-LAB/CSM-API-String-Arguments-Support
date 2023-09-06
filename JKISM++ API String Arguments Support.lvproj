@@ -17,6 +17,7 @@
 			<Item Name="Test Cases - API String Arguments Support(VIM).vi" Type="VI" URL="../Example/Test Cases - API String Arguments Support(VIM).vi"/>
 		</Item>
 		<Item Name="JKISM++ API String Arguments Support.lvlib" Type="Library" URL="../API-String-Arugments-Support/JKISM++ API String Arguments Support.lvlib"/>
+		<Item Name="JKISM++ API String Arguments Support.vipb" Type="Document" URL="../JKISM++ API String Arguments Support.vipb"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="1D Array to String__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/string/string.llb/1D Array to String__ogtk.vi"/>
@@ -60,6 +61,7 @@
 				<Item Name="Split Cluster TD__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Split Cluster TD__ogtk.vi"/>
 				<Item Name="String to 1D Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/string/string.llb/String to 1D Array__ogtk.vi"/>
 				<Item Name="String to Boolean_nevstop.vi" Type="VI" URL="/&lt;userlib&gt;/NEVSTOP-Programming-Palette/Comparison/String to Boolean_nevstop.vi"/>
+				<Item Name="String To Float_nevstop.vi" Type="VI" URL="/&lt;userlib&gt;/NEVSTOP-Programming-Palette/Numeric/String To Float_nevstop.vi"/>
 				<Item Name="String To Number(I8)_nevstop.vi" Type="VI" URL="/&lt;userlib&gt;/NEVSTOP-Programming-Palette/Numeric/_Instance/String To Number(I8)_nevstop.vi"/>
 				<Item Name="String To Number(I16)_nevstop.vi" Type="VI" URL="/&lt;userlib&gt;/NEVSTOP-Programming-Palette/Numeric/_Instance/String To Number(I16)_nevstop.vi"/>
 				<Item Name="String To Number(I32)_nevstop.vi" Type="VI" URL="/&lt;userlib&gt;/NEVSTOP-Programming-Palette/Numeric/_Instance/String To Number(I32)_nevstop.vi"/>

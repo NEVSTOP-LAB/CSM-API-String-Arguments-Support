@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2023-09-06 21:51:20" Creator="yaoli" Comments="" ID="d87eb23fe18d9df813ac41f5820fb2d3">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2023-09-06 23:24:09" Creator="yaoli" Comments="" ID="2653ca4bedbc8acd85804d322bdc3d2a">
   <Library_General_Settings>
     <Package_File_Name>NEVSTOP_lib_JKISM++_API_String_Arguments_Support</Package_File_Name>
     <Library_Version>0.1.1.14</Library_Version>
@@ -18,7 +18,7 @@
   <Advanced_Settings>
     <Package_Dependencies>
       <Additional_External_Dependencies>nevstop_lib_jki_state_machine++ &gt;=2023.8.30.175756</Additional_External_Dependencies>
-      <Additional_External_Dependencies>nevstop_programming_palette &gt;=2023.7.31.104909</Additional_External_Dependencies>
+      <Additional_External_Dependencies>nevstop_programming_palette &gt;=2023.9.6.231456</Additional_External_Dependencies>
     </Package_Dependencies>
     <Custom_Action_VIs>
       <Pre-Build_VI/>
