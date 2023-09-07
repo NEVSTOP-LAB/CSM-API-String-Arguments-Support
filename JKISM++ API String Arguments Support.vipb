@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2023-09-07 11:41:37" Creator="yaoli" Comments="" ID="8825e501f2510a0714a518f6efb20264">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2023-09-07 12:45:30" Creator="yaoli" Comments="" ID="2c14581968a6c54b94b1400c2b189142">
   <Library_General_Settings>
     <Package_File_Name>NEVSTOP_lib_JKISM++_API_String_Arguments_Support</Package_File_Name>
     <Library_Version>0.1.1.14</Library_Version>
@@ -137,6 +137,9 @@
       </Exclusions>
       <Exclusions>
         <Path>DEV ENVIRONMENT LabVIEW 2017</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>_test</Path>
       </Exclusions>
       <Place_Folder_Contents>
         <Path/>
