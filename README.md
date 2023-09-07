@@ -77,7 +77,7 @@ Enum = {1- AAA,5 - BBBB, 9 - CCCC}
 
 ### Array
 
-',' is used for element seperator, ';' is usd for row seperator. '[' & ']' are used for boundary symbol. If it's not in cluster, it's not indispensable.
+',' is used for element seperator, ';' is usd for row seperator. '[' & ']' are used for boundary symbol. If it's not in cluster, boundary symbol is not indispensable.
 
 **Example:**
 
@@ -107,7 +107,7 @@ a2 b2 c2 d2 e2
 ### Cluster
 
 
-':' is used for seperating name and value, ';' is usd for seperating elements. '{' & '}' are used for boundary symbol. If it's not within other array/cluster, it's not indispensable. Not all elements should be descripted but the changing ones. 
+':' is used for seperating name and value, ';' is usd for seperating elements. '{' & '}' are used for boundary symbol. If it's not within other array/cluster, boundary symbol is not indispensable. Not all elements should be descripted but the changing ones. 
 It's helpful for JKISM++ to reduce configuration setting API numbers. You can defined the configuration within a cluster and one single setting API for the config API.
 
 **Example:**
