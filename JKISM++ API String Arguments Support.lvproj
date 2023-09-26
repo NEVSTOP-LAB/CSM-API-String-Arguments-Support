@@ -21,13 +21,15 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="_test" Type="Folder" URL="../_test">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="Example" Type="Folder">
 			<Item Name="Test Cases - API String Arguments Support(Variant).vi" Type="VI" URL="../Example/Test Cases - API String Arguments Support(Variant).vi"/>
 			<Item Name="Test Cases - API String Arguments Support(VIM).vi" Type="VI" URL="../Example/Test Cases - API String Arguments Support(VIM).vi"/>
 		</Item>
 		<Item Name="JKISM++ API String Arguments Support.lvlib" Type="Library" URL="../API-String-Arugments-Support/JKISM++ API String Arguments Support.lvlib"/>
 		<Item Name="JKISM++ API String Arguments Support.vipb" Type="Document" URL="../JKISM++ API String Arguments Support.vipb"/>
-		<Item Name="Untitled 12.vi" Type="VI" URL="../_test/Untitled 12.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="1D Array to String__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/string/string.llb/1D Array to String__ogtk.vi"/>
