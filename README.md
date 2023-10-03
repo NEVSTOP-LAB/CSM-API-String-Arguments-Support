@@ -12,7 +12,7 @@
 
 #### String/Path
 
-It Follows JKISM++'s rule. '->|' '->' '-@' '-&' '>>' ',' ';' should be replaced with %[Hex] String before passing. You can use **JKISM++ AdvanceAPI\JKISM++ Make String Arguments Safe.vi**.
+It Follows CSM's rule. '->|' '->' '-@' '-&' '>>' ',' ';' should be replaced with %[Hex] String before passing. You can use **CSM AdvanceAPI\CSM Make String Arguments Safe.vi**.
 
 #### Boolean
 
@@ -107,8 +107,8 @@ a2 b2 c2 d2 e2
 ### Cluster
 
 
-':' is used for seperating name and value, ';' is usd for seperating elements. '{' & '}' are used for boundary symbol. If it's not within other array/cluster, boundary symbol is not indispensable. Not all elements should be descripted but the changing ones. 
-It's helpful for JKISM++ to reduce configuration setting API numbers. You can defined the configuration within a cluster and one single setting API for the config API.
+':' is used for seperating name and value, ';' is usd for seperating elements. '{' & '}' are used for boundary symbol. If it's not within other array/cluster, boundary symbol is not indispensable. Not all elements should be descripted but the changing ones.
+It's helpful for CSM to reduce configuration setting API numbers. You can defined the configuration within a cluster and one single setting API for the config API.
 
 **Example:**
 
