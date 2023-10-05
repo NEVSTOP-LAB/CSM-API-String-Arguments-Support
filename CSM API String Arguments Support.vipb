@@ -1,6 +1,6 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2023-10-03 22:05:23" Creator="yaoli" Comments="" ID="5d9854c17bb5917b3a7ff35b849d549b">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2023-10-05 22:53:28" Creator="yaoli" Comments="" ID="60ba04b68bcf153e610a0a72fe604b87">
   <Library_General_Settings>
-    <Package_File_Name>NEVSTOP_lib_JKISM++_API_String_Arguments_Support</Package_File_Name>
+    <Package_File_Name>NEVSTOP_lib_CSM_API_String_Arguments_Support</Package_File_Name>
     <Library_Version>0.1.1.14</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
