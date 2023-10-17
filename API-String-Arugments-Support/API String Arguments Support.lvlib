@@ -10,4 +10,5 @@
 		<Item Name="SingleElementsArray To Data_jkism.vi" Type="VI" URL="../_Support/SingleElementsArray To Data_jkism.vi"/>
 	</Item>
 	<Item Name="Convert API String Arguments to Data.vim" Type="VI" URL="../Convert API String Arguments to Data.vim"/>
+	<Item Name="Get Configuration as String.vim" Type="VI" URL="../Get Configuration as String.vim"/>
 </Library>

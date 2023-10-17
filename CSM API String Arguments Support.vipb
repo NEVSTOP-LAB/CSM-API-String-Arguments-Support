@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2023-10-05 22:53:28" Creator="yaoli" Comments="" ID="60ba04b68bcf153e610a0a72fe604b87">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2023-10-17 21:43:28" Creator="yaoli" Comments="" ID="d8e385142707a24527873ea1c13daf38">
   <Library_General_Settings>
     <Package_File_Name>NEVSTOP_lib_CSM_API_String_Arguments_Support</Package_File_Name>
-    <Library_Version>0.1.1.14</Library_Version>
+    <Library_Version>0.2.0.15</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>vip</Library_Output_Folder>
@@ -231,6 +231,12 @@ U32 integer
         <Preserve_Hierarchy>true</Preserve_Hierarchy>
         <Path/>
       </QuickDrop_Plugins>
+      <Additional_Destination>
+        <Name>CSM Templates</Name>
+        <LLB>false</LLB>
+        <Preserve_Hierarchy>true</Preserve_Hierarchy>
+        <Path>&lt;user.lib&gt;\_NEVSTOP\Communicable State Machine(CSM)\More Templates</Path>
+      </Additional_Destination>
     </Destinations>
     <Source_Files>
       <Destination_Overrides>
@@ -249,6 +255,12 @@ U32 integer
         <Path>Example</Path>
         <Destination>1</Destination>
         <Additional_Destination>false</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>Template</Path>
+        <Destination>0</Destination>
+        <Additional_Destination>true</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
       <Password_Overrides>
@@ -290,6 +302,9 @@ U32 integer
       </Place_Folder_Contents>
       <Place_Folder_Contents>
         <Path>Example</Path>
+      </Place_Folder_Contents>
+      <Place_Folder_Contents>
+        <Path>Template</Path>
       </Place_Folder_Contents>
     </Source_Files>
     <License_Agreement_Filepath/>
