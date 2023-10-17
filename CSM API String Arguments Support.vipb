@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2023-10-17 21:43:28" Creator="yaoli" Comments="" ID="d8e385142707a24527873ea1c13daf38">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2023-10-17 23:04:05" Creator="yaoli" Comments="" ID="a790fb1466197ec5bff9c7a9c5388d8f">
   <Library_General_Settings>
     <Package_File_Name>NEVSTOP_lib_CSM_API_String_Arguments_Support</Package_File_Name>
     <Library_Version>0.2.0.15</Library_Version>
@@ -290,6 +290,9 @@ U32 integer
       </Exclusions>
       <Exclusions>
         <Path>README.md</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>vip</Path>
       </Exclusions>
       <Place_Folder_Contents>
         <Path/>
