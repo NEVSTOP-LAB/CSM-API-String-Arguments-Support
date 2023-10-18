@@ -5,9 +5,16 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="Support" Type="Folder">
+		<Item Name="Compare Two Numbers_csm.vim" Type="VI" URL="../_Support/Compare Two Numbers_csm.vim"/>
+		<Item Name="Concatenate Strings If not Empty_csm.vi" Type="VI" URL="../_Support/Concatenate Strings If not Empty_csm.vi"/>
 		<Item Name="Convert API String Arguments to Data Variant.vi" Type="VI" URL="../_Support/Convert API String Arguments to Data Variant.vi"/>
-		<Item Name="Data To SingleElementsArray_jkism.vi" Type="VI" URL="../_Support/Data To SingleElementsArray_jkism.vi"/>
-		<Item Name="SingleElementsArray To Data_jkism.vi" Type="VI" URL="../_Support/SingleElementsArray To Data_jkism.vi"/>
+		<Item Name="Data To SingleElementsArray_csm.vi" Type="VI" URL="../_Support/Data To SingleElementsArray_csm.vi"/>
+		<Item Name="Indexed String To Enum_csm.vi" Type="VI" URL="../_Support/Indexed String To Enum_csm.vi"/>
+		<Item Name="Match Multiple Pattern_csm.vi" Type="VI" URL="../_Support/Match Multiple Pattern_csm.vi"/>
+		<Item Name="SingleElementsArray To Data_csm.vi" Type="VI" URL="../_Support/SingleElementsArray To Data_csm.vi"/>
+		<Item Name="String to Boolean_csm.vi" Type="VI" URL="../_Support/String to Boolean_csm.vi"/>
+		<Item Name="String To Float_csm.vi" Type="VI" URL="../_Support/String To Float_csm.vi"/>
+		<Item Name="String To Number(I64)_csm.vi" Type="VI" URL="../_Support/String To Number(I64)_csm.vi"/>
 	</Item>
 	<Item Name="Convert API String Arguments to Data.vim" Type="VI" URL="../Convert API String Arguments to Data.vim"/>
 	<Item Name="Get Configuration as String.vim" Type="VI" URL="../Get Configuration as String.vim"/>
