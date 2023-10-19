@@ -17,5 +17,6 @@
 		<Item Name="String To Number(I64)_csm.vi" Type="VI" URL="../_Support/String To Number(I64)_csm.vi"/>
 	</Item>
 	<Item Name="Convert API String Arguments to Data.vim" Type="VI" URL="../Convert API String Arguments to Data.vim"/>
+	<Item Name="Data To API String Arguments.vi" Type="VI" URL="../_Support/Data To API String Arguments.vi"/>
 	<Item Name="Get Configuration as String.vim" Type="VI" URL="../Get Configuration as String.vim"/>
 </Library>
