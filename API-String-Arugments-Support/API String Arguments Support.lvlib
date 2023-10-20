@@ -10,6 +10,7 @@
 			<Item Name="Compare Two Numbers_csm.vim" Type="VI" URL="../_Support/Compare Two Numbers_csm.vim"/>
 			<Item Name="Concatenate Strings If not Empty_csm.vi" Type="VI" URL="../_Support/Concatenate Strings If not Empty_csm.vi"/>
 			<Item Name="Data To SingleElementsArray_csm.vi" Type="VI" URL="../_Support/Data To SingleElementsArray_csm.vi"/>
+			<Item Name="Data To SingleElementsArray_with_itself_csm.vi" Type="VI" URL="../_Support/Data To SingleElementsArray_with_itself_csm.vi"/>
 			<Item Name="Indexed String To Enum_csm.vi" Type="VI" URL="../_Support/Indexed String To Enum_csm.vi"/>
 			<Item Name="Match Multiple Pattern_csm.vi" Type="VI" URL="../_Support/Match Multiple Pattern_csm.vi"/>
 			<Item Name="SingleElementsArray To Data_csm.vi" Type="VI" URL="../_Support/SingleElementsArray To Data_csm.vi"/>
