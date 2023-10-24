@@ -1,5 +1,9 @@
 # CSM-API-String-Arugments-Support
 
+The purpose of this library is to enhance the API parameters for Communicable State Machine (CSM). It allows for the inclusion of various data types in plain text format. Two more templates which include "Data: Get Configuration", "Data: Set Configuration" and "Data: Get Internal Status" states, are provided in the library. These templates can serve as a starting point for building your CSM module with the ability to access data stored in the '>> internal data >>' shift register.
+
+![example](.github/doc.png)
+
 ### Supported Data Type
 
  - String/Path
@@ -128,8 +132,5 @@ U32 integer
 
 ## Know Issue
 
-1.  Cluster in Array is not fully supported. Need to imporve.
-2.  2D array in cluster is not supported now. Need to imporve.
-
-
-
+1.  **Cluster in Array is not fully supported. Need to imporve.**
+2.  **2D array in cluster is not supported now. Need to imporve.**
