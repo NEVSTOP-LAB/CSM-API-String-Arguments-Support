@@ -23,6 +23,6 @@
 		<Item Name="Query Data as API String Arguments(variant).vi" Type="VI" URL="../_Support/Query Data as API String Arguments(variant).vi"/>
 	</Item>
 	<Item Name="Convert API String Arguments to Data.vim" Type="VI" URL="../Convert API String Arguments to Data.vim"/>
+	<Item Name="Convert Data To API String Arguments.vim" Type="VI" URL="../Convert Data To API String Arguments.vim"/>
 	<Item Name="Query Data as API String Arguments.vim" Type="VI" URL="../Query Data as API String Arguments.vim"/>
-	<Item Name="Data To API String Arguments.vim" Type="VI" URL="../Data To API String Arguments.vim"/>
 </Library>
