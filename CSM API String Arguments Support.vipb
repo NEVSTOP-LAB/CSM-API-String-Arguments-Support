@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2023-10-27 14:07:41" Creator="yaoli" Comments="" ID="31b7782fdd0472e2c1e602c5ebd10807">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2023-10-27 22:17:34" Creator="yaoli" Comments="" ID="46d9580a8ad063e02ba0dbc65b326cd9">
   <Library_General_Settings>
     <Package_File_Name>NEVSTOP_lib_CSM_API_String_Arguments_Support</Package_File_Name>
     <Library_Version>0.2.0.15</Library_Version>
@@ -36,7 +36,6 @@
     <Description>
       <One_Line_Description_Summary>API string argument support enhancement for CSM</One_Line_Description_Summary>
       <Description>The purpose of this library is to enhance the API parameters for Communicable State Machine (CSM). It allows for the inclusion of various data types in plain text format. Two more templates which include "Data: Get Configuration", "Data: Set Configuration" and "Data: Get Internal Status" states, are provided in the library. These templates can serve as a starting point for building your CSM module with the ability to access data stored in the '&gt;&gt; internal data &gt;&gt;' shift register.
-
 
 ## Supported Data Type
 
@@ -177,6 +176,12 @@ More information for the supported datatype format, please visit: https://github
       </Exclusions>
       <Exclusions>
         <Path>README.md</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>vip</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>LICENSE</Path>
       </Exclusions>
       <Place_Folder_Contents>
         <Path/>
