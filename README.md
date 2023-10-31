@@ -72,13 +72,19 @@ Supported Format:
 
 **Condition1**
 
-"2023-10-11 22:54:33(%<%Y-%m-%d %H:%M:%S>T)" is valid. Format in "" will be used to parse timestamp string. It's equal to UTC time string "2023-10-11T14:54:33.000Z".
+`TimeStamp String(FormatString)`is valid. FormatString in "" will be used to parse TimeStamp String. 
+
+```
+"2023-10-11 22:54:33(%<%Y-%m-%d %H:%M:%S>T)" equal to UTC time string "2023-10-11T14:54:33.000Z".
+```
 
 **Condition2**
-No time string format included in string, UTC will be use.
 
-"2023-10-31T14:49:39.597Z" is valid. ISO8601 UTC standard is used.
+No time string format included in string, ISO8601 UTC standard is used.
 
+```
+"2023-10-31T14:49:39.597Z" is valid. 
+```
 
 ### Enum
 
