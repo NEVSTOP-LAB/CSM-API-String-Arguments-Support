@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2023-10-27 22:17:34" Creator="yaoli" Comments="" ID="46d9580a8ad063e02ba0dbc65b326cd9">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2023-10-31 20:50:13" Creator="yaoli" Comments="" ID="3864546ee388961edb60617c6e367247">
   <Library_General_Settings>
     <Package_File_Name>NEVSTOP_lib_CSM_API_String_Arguments_Support</Package_File_Name>
-    <Library_Version>0.2.0.15</Library_Version>
+    <Library_Version>2023.11.0.15</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>vip</Library_Output_Folder>
@@ -56,7 +56,7 @@ More information for the supported datatype format, please visit: https://github
       <Copyright/>
       <Packager>NEVSTOP</Packager>
       <URL>https://github.com/NEVSTOP-LAB/CSM-API-String-Arugments-Support</URL>
-      <Release_Notes>First release. API is under CSM Add-on palette.</Release_Notes>
+      <Release_Notes/>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -176,9 +176,6 @@ More information for the supported datatype format, please visit: https://github
       </Exclusions>
       <Exclusions>
         <Path>README.md</Path>
-      </Exclusions>
-      <Exclusions>
-        <Path>vip</Path>
       </Exclusions>
       <Exclusions>
         <Path>LICENSE</Path>
