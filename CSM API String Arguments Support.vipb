@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2023-10-31 20:50:13" Creator="yaoli" Comments="" ID="3864546ee388961edb60617c6e367247">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2023-10-31 21:13:59" Creator="yaoli" Comments="" ID="662ecd8f2d0fed858b21607e8d8f1195">
   <Library_General_Settings>
     <Package_File_Name>NEVSTOP_lib_CSM_API_String_Arguments_Support</Package_File_Name>
     <Library_Version>2023.11.0.15</Library_Version>
@@ -46,6 +46,7 @@
  - Enum
  - Array
  - Cluster
+ - Other(use CSM-Hexstr)
 
 More information for the supported datatype format, please visit: https://github.com/NEVSTOP-LAB/CSM-API-String-Arugments-Support
 
@@ -56,7 +57,7 @@ More information for the supported datatype format, please visit: https://github
       <Copyright/>
       <Packager>NEVSTOP</Packager>
       <URL>https://github.com/NEVSTOP-LAB/CSM-API-String-Arugments-Support</URL>
-      <Release_Notes/>
+      <Release_Notes>[add] #12 Other Datatype will be treated as variant and use CSM-HexStr for data transformation.</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
