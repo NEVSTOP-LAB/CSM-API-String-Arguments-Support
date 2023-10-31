@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2023-10-31 21:13:59" Creator="yaoli" Comments="" ID="662ecd8f2d0fed858b21607e8d8f1195">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2023-10-31 22:57:08" Creator="yaoli" Comments="" ID="b6e23ca3e53197fa76d7fde120a2c0a5">
   <Library_General_Settings>
     <Package_File_Name>NEVSTOP_lib_CSM_API_String_Arguments_Support</Package_File_Name>
     <Library_Version>2023.11.0.15</Library_Version>
@@ -17,6 +17,7 @@
   </Library_General_Settings>
   <Advanced_Settings>
     <Package_Dependencies>
+      <Additional_External_Dependencies>labview_open_source_lib_epoch_datetime &gt;=1.2.0.6</Additional_External_Dependencies>
       <Additional_External_Dependencies>nevstop_lib_communicable_state_machine &gt;=2023.10.27.132206</Additional_External_Dependencies>
       <Additional_External_Dependencies>oglib_array &gt;=4.0.0.9</Additional_External_Dependencies>
       <Additional_External_Dependencies>oglib_error &gt;=4.2.0.23</Additional_External_Dependencies>
@@ -44,6 +45,7 @@
  - Integer(I8,I16,I32,I64,U8,U16,U32,U64)
  - Float(DBL/SGL)
  - Enum
+ - Timestamp
  - Array
  - Cluster
  - Other(use CSM-Hexstr)
@@ -57,7 +59,8 @@ More information for the supported datatype format, please visit: https://github
       <Copyright/>
       <Packager>NEVSTOP</Packager>
       <URL>https://github.com/NEVSTOP-LAB/CSM-API-String-Arugments-Support</URL>
-      <Release_Notes>[add] #12 Other Datatype will be treated as variant and use CSM-HexStr for data transformation.</Release_Notes>
+      <Release_Notes>[add] #12 Other Datatype will be treated as variant and use CSM-HexStr for data transformation.
+[add] #9 add timestamp support based on Epoch Date &amp; Time by G Open Source Project</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>

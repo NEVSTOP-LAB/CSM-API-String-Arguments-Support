@@ -15,6 +15,7 @@ The purpose of this library is to enhance the API parameters for Communicable St
  - Boolean
  - Integer(I8,I16,I32,I64,U8,U16,U32,U64)
  - Float(DBL/SGL)
+ - Timestamp
  - Enum
  - Array
  - Cluster
@@ -66,6 +67,18 @@ Supported Format:
   - 1.23m (1.23*0.001)
   - 1.23u (1.23*0.000001)
 ```
+
+### Timestamp
+
+**Condition1**
+
+"2023-10-11 22:54:33(%<%Y-%m-%d %H:%M:%S>T)" is valid. Format in "" will be used to parse timestamp string. It's equal to UTC time string "2023-10-11T14:54:33.000Z".
+
+**Condition2**
+No time string format included in string, UTC will be use.
+
+"2023-10-31T14:49:39.597Z" is valid. ISO8601 UTC standard is used.
+
 
 ### Enum
 
