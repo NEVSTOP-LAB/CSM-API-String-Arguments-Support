@@ -1,11 +1,11 @@
 # CSM-API-String-Arugments-Support
 
-[![Image](https://www.vipm.io/package/nevstop_lib_csm_api_string_arguments_support/badge.svg?metric=installs)](https://www.vipm.io/package/nevstop_lib_csm_api_string_arguments_support/) 
+[![Image](https://www.vipm.io/package/nevstop_lib_csm_api_string_arguments_support/badge.svg?metric=installs)](https://www.vipm.io/package/nevstop_lib_csm_api_string_arguments_support/)
 [![Image](https://www.vipm.io/package/nevstop_lib_csm_api_string_arguments_support/badge.svg?metric=stars)](https://www.vipm.io/package/nevstop_lib_csm_api_string_arguments_support/)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![GitHub all releases](https://img.shields.io/github/downloads/NEVSTOP-LAB/CSM-API-String-Arugments-Support/total)](https://github.com/NEVSTOP-LAB/CSM-API-String-Arugments-Support/releases)
 
-The purpose of this library is to enhance the API parameters for Communicable State Machine (CSM). It allows for the inclusion of various data types in plain text format. Two more templates which include "Data: Get Configuration", "Data: Set Configuration" and "Data: Get Internal Status" states, are provided in the library. These templates can serve as a starting point for building your CSM module with the ability to access data stored in the '>> internal data >>' shift register.
+The purpose of this library is to enhance the API parameters for Communicable State Machine (CSM). It allows for the inclusion of various data types in plain text format. Two more templates which include "Data: Get Configuration", "Data: Set Configuration" and "Data: Get Internal Data" states, are provided in the library. These templates can serve as a starting point for building your CSM module with the ability to access data stored in the '>> internal data >>' shift register.
 
 ![example](.github/doc.png)
 
@@ -15,6 +15,7 @@ The purpose of this library is to enhance the API parameters for Communicable St
  - Boolean
  - Integer(I8,I16,I32,I64,U8,U16,U32,U64)
  - Float(DBL/SGL)
+ - Timestamp
  - Enum
  - Array
  - Cluster
@@ -67,6 +68,25 @@ Supported Format:
   - 1.23u (1.23*0.000001)
 ```
 
+### Timestamp
+
+**Condition1**
+
+`TimeStamp String(FormatString)`is supported. `FormatString` in "" will be used to parse `TimeStamp String`.
+
+```
+"2023-10-11 22:54:33(%<%Y-%m-%d %H:%M:%S>T)" equal to UTC timestamp string "2023-10-11T14:54:33.000Z".
+```
+
+**Condition2**
+
+No time string format included in string, ISO8601 UTC standard is used.
+
+```
+"2023-10-31T14:49:39.597Z" is valid.
+"2023-10-31T22:49:39.597+08:00" is valid.
+```
+
 ### Enum
 
 **Condition1**
@@ -86,7 +106,7 @@ Enum = {1- AAA,5 - BBBB, 9 - CCCC}
 
 ### Array
 
-',' is used for element seperator, ';' is usd for row seperator. '[' & ']' are used for boundary symbol. If it's not in cluster, boundary symbol is not indispensable.
+',' is used for element separator, ';' is usd for row separator. '[' & ']' are used for boundary symbol. If it's not in cluster, boundary symbol is not indispensable.
 
 **Example:**
 
@@ -116,7 +136,7 @@ a2 b2 c2 d2 e2
 ### Cluster
 
 
-':' is used for seperating name and value, ';' is usd for seperating elements. '{' & '}' are used for boundary symbol. If it's not within other array/cluster, boundary symbol is not indispensable. Not all elements should be descripted but the changing ones.
+':' is used for separating name and value, ';' is usd for separating elements. '{' & '}' are used for boundary symbol. If it's not within other array/cluster, boundary symbol is not indispensable. Not all elements should be described but the changing ones.
 It's helpful for CSM to reduce configuration setting API numbers. You can defined the configuration within a cluster and one single setting API for the config API.
 
 **Example:**
@@ -130,10 +150,13 @@ U32 integer
 }
 ```
 
-`b:On` and `{b:On}` stands for change the input cluster's boolean b to TURE only. Other elements keep as before.
+`b:On` and `{b:On}` stands for change the input cluster's boolean b to TRUE only. Other elements keep as before.
 
-`b:On;str:abcdef` and `{b:On;str:abcdef}` stands for change the input cluster's boolean b to TURE and String str to "abcdef".  Other elements keep as before.
+`b:On;str:abcdef` and `{b:On;str:abcdef}` stands for change the input cluster's boolean b to TRUE and String str to "abcdef".  Other elements keep as before.
 
+### Other DataType
+
+Other Datatype will be treated as variant and use CSM-HexStr for data transformation.
 
 ## Know Issue
 

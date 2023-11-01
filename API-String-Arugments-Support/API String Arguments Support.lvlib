@@ -22,6 +22,10 @@
 		<Item Name="Data To API String Arguments.vi" Type="VI" URL="../_Support/Data To API String Arguments.vi"/>
 		<Item Name="Query Data as API String Arguments(variant).vi" Type="VI" URL="../_Support/Query Data as API String Arguments(variant).vi"/>
 	</Item>
+	<Item Name="Utility" Type="Folder">
+		<Item Name="CSM - Timestamp to API String Arguments.vi" Type="VI" URL="../CSM - Timestamp to API String Arguments.vi"/>
+		<Item Name="CSM - Module VI Ref.vi" Type="VI" URL="../CSM - Module VI Ref.vi"/>
+	</Item>
 	<Item Name="Convert API String Arguments to Data.vim" Type="VI" URL="../Convert API String Arguments to Data.vim"/>
 	<Item Name="Convert Data To API String Arguments.vim" Type="VI" URL="../Convert Data To API String Arguments.vim"/>
 	<Item Name="Query Data as API String Arguments.vim" Type="VI" URL="../Query Data as API String Arguments.vim"/>
