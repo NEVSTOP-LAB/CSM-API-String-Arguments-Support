@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![GitHub all releases](https://img.shields.io/github/downloads/NEVSTOP-LAB/CSM-API-String-Arugments-Support/total)](https://github.com/NEVSTOP-LAB/CSM-API-String-Arugments-Support/releases)
 
-The purpose of this library is to enhance the API parameters for Communicable State Machine (CSM). It allows for the inclusion of various data types in plain text format. Two more templates which include "Data: Get Configuration", "Data: Set Configuration" and "Data: Get Internal Status" states, are provided in the library. These templates can serve as a starting point for building your CSM module with the ability to access data stored in the '>> internal data >>' shift register.
+The purpose of this library is to enhance the API parameters for Communicable State Machine (CSM). It allows for the inclusion of various data types in plain text format. Two more templates which include "Data: Get Configuration", "Data: Set Configuration" and "Data: Get Internal Data" states, are provided in the library. These templates can serve as a starting point for building your CSM module with the ability to access data stored in the '>> internal data >>' shift register.
 
 ![example](.github/doc.png)
 
@@ -72,10 +72,10 @@ Supported Format:
 
 **Condition1**
 
-`TimeStamp String(FormatString)`is valid. FormatString in "" will be used to parse TimeStamp String. 
+`TimeStamp String(FormatString)`is supported. `FormatString` in "" will be used to parse `TimeStamp String`.
 
 ```
-"2023-10-11 22:54:33(%<%Y-%m-%d %H:%M:%S>T)" equal to UTC time string "2023-10-11T14:54:33.000Z".
+"2023-10-11 22:54:33(%<%Y-%m-%d %H:%M:%S>T)" equal to UTC timestamp string "2023-10-11T14:54:33.000Z".
 ```
 
 **Condition2**
@@ -83,7 +83,7 @@ Supported Format:
 No time string format included in string, ISO8601 UTC standard is used.
 
 ```
-"2023-10-31T14:49:39.597Z" is valid. 
+"2023-10-31T14:49:39.597Z" is valid.
 ```
 
 ### Enum
