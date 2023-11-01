@@ -24,6 +24,13 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
+      - name: vipm-InstallPackage
+      uses: NEVSTOP-LAB/vipm-InstallPackage@main
+      with:
+        LabVIEW_Version: 2017
+        # Package could be PackageName/PacakgeWithVersion/vipFilePath
+        Package: "Epoch Date & Time"
+
       - uses: NEVSTOP-LAB/InstallNevstopPackage@main
         with:
           LabVIEW_Version: 2017
