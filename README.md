@@ -84,6 +84,7 @@ No time string format included in string, ISO8601 UTC standard is used.
 
 ```
 "2023-10-31T14:49:39.597Z" is valid.
+"2023-10-31T22:49:39.597+08:00" is valid.
 ```
 
 ### Enum
