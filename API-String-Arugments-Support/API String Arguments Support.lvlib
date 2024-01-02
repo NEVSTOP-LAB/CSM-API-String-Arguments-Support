@@ -25,6 +25,7 @@
 	<Item Name="Utility" Type="Folder">
 		<Item Name="CSM - Timestamp to API String Arguments.vi" Type="VI" URL="../CSM - Timestamp to API String Arguments.vi"/>
 		<Item Name="CSM - Module VI Ref.vi" Type="VI" URL="../CSM - Module VI Ref.vi"/>
+		<Item Name="CSM - Convert HexStr to Data.vim" Type="VI" URL="../CSM - Convert HexStr to Data.vim"/>
 	</Item>
 	<Item Name="Convert API String Arguments to Data.vim" Type="VI" URL="../Convert API String Arguments to Data.vim"/>
 	<Item Name="Convert Data To API String Arguments.vim" Type="VI" URL="../Convert Data To API String Arguments.vim"/>
