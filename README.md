@@ -9,22 +9,23 @@ The purpose of this library is to enhance the API parameters for Communicable St
 
 ![example](.github/doc.png)
 
-### Supported Data Type
+## Supported Data Type
 
  - String/Path
  - Boolean
  - Integer(I8,I16,I32,I64,U8,U16,U32,U64)
  - Float(DBL/SGL)
+ - Complex(DBL/SGL)
  - Timestamp
  - Enum
  - Array
  - Cluster
 
-#### String/Path
+### String/Path
 
 It Follows CSM's rule. '->|' '->' '-@' '-&' '>>' ',' ';' should be replaced with %[Hex] String before passing. You can use **CSM AdvanceAPI\CSM Make String Arguments Safe.vi**.
 
-#### Boolean
+### Boolean
 
 ```
 TRUE/FALSE String Pairs:
@@ -39,7 +40,7 @@ TRUE/FALSE String Pairs:
   - Non-null/null
 ```
 
-#### Integer
+### Integer
 
 ```
 Supported format:
@@ -55,7 +56,7 @@ Supported format:
   - 1M
 ```
 
-#### Float(DBL/SGL)
+### Float(DBL/SGL)
 
 ```
 Supported Format:
@@ -67,6 +68,11 @@ Supported Format:
   - 1.23m (1.23*0.001)
   - 1.23u (1.23*0.000001)
 ```
+
+### Complex(DBL/SGL)
+
+String of `a+bi` or `a-bi` stands of complex data type. `a` and `b` is supporting all Float format.
+
 
 ### Timestamp
 
@@ -154,7 +160,7 @@ U32 integer
 
 `b:On;str:abcdef` and `{b:On;str:abcdef}` stands for change the input cluster's boolean b to TRUE and String str to "abcdef".  Other elements keep as before.
 
-### Other DataType
+#### Other DataType
 
 Other Datatype will be treated as variant and use CSM-HexStr for data transformation.
 
