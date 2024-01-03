@@ -9,7 +9,7 @@ The purpose of this library is to enhance the API parameters for Communicable St
 
 ![example](.github/doc.png)
 
-### Supported Data Type
+## Supported Data Type
 
  - String/Path
  - Boolean
@@ -21,11 +21,11 @@ The purpose of this library is to enhance the API parameters for Communicable St
  - Array
  - Cluster
 
-#### String/Path
+### String/Path
 
 It Follows CSM's rule. '->|' '->' '-@' '-&' '>>' ',' ';' should be replaced with %[Hex] String before passing. You can use **CSM AdvanceAPI\CSM Make String Arguments Safe.vi**.
 
-#### Boolean
+### Boolean
 
 ```
 TRUE/FALSE String Pairs:
@@ -40,7 +40,7 @@ TRUE/FALSE String Pairs:
   - Non-null/null
 ```
 
-#### Integer
+### Integer
 
 ```
 Supported format:
@@ -56,7 +56,7 @@ Supported format:
   - 1M
 ```
 
-#### Float(DBL/SGL)
+### Float(DBL/SGL)
 
 ```
 Supported Format:
@@ -69,12 +69,12 @@ Supported Format:
   - 1.23u (1.23*0.000001)
 ```
 
-#### Complex(DBL/SGL)
+### Complex(DBL/SGL)
 
 String of `a+bi` or `a-bi` stands of complex data type. `a` and `b` is supporting all Float format.
 
 
-#### Timestamp
+### Timestamp
 
 **Condition1**
 
@@ -93,7 +93,7 @@ No time string format included in string, ISO8601 UTC standard is used.
 "2023-10-31T22:49:39.597+08:00" is valid.
 ```
 
-#### Enum
+### Enum
 
 **Condition1**
 
@@ -110,7 +110,7 @@ Enum = {1- AAA,5 - BBBB, 9 - CCCC}
  - String "5" will be converted to Enum(5 - BBBB), IntegerValue = 1
  - String "9 - CCCC" will be converted to Enum(9 - CCCC), IntegerValue = 2
 
-#### Array
+### Array
 
 ',' is used for element separator, ';' is usd for row separator. '[' & ']' are used for boundary symbol. If it's not in cluster, boundary symbol is not indispensable.
 
@@ -139,7 +139,7 @@ a1 b1 c1 d1 e1
 a2 b2 c2 d2 e2
 ```
 
-#### Cluster
+### Cluster
 
 
 ':' is used for separating name and value, ';' is usd for separating elements. '{' & '}' are used for boundary symbol. If it's not within other array/cluster, boundary symbol is not indispensable. Not all elements should be described but the changing ones.
