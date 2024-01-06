@@ -1,4 +1,4 @@
-# CSM-API-String-Arugments-Support
+# CSM-API-String-Arguments-Support
 
 [![Image](https://www.vipm.io/package/nevstop_lib_csm_api_string_arguments_support/badge.svg?metric=installs)](https://www.vipm.io/package/nevstop_lib_csm_api_string_arguments_support/)
 [![Image](https://www.vipm.io/package/nevstop_lib_csm_api_string_arguments_support/badge.svg?metric=stars)](https://www.vipm.io/package/nevstop_lib_csm_api_string_arguments_support/)
@@ -11,15 +11,16 @@ The purpose of this library is to enhance the API parameters for Communicable St
 
 ## Supported Data Type
 
- - String/Path
- - Boolean
- - Integer(I8,I16,I32,I64,U8,U16,U32,U64)
- - Float(DBL/SGL)
- - Complex(DBL/SGL)
- - Timestamp
- - Enum
- - Array
- - Cluster
+- String/Path
+- Boolean
+- Integer(I8,I16,I32,I64,U8,U16,U32,U64)
+- Float(DBL/SGL)
+- Complex(DBL/SGL)
+- Timestamp
+- Enum
+- Array
+- Cluster
+- Other(use CSM-Hexstr)
 
 ### String/Path
 
@@ -27,7 +28,7 @@ It Follows CSM's rule. '->|' '->' '-@' '-&' '>>' ',' ';' should be replaced with
 
 ### Boolean
 
-```
+``` text
 TRUE/FALSE String Pairs:
   - T/F
   - True/False
@@ -42,7 +43,7 @@ TRUE/FALSE String Pairs:
 
 ### Integer
 
-```
+``` text
 Supported format:
   - 12345
   - 0d12345
@@ -58,7 +59,7 @@ Supported format:
 
 ### Float(DBL/SGL)
 
-```
+``` text
 Supported Format:
   - 1.2345
   - 1.23E+2
@@ -67,48 +68,48 @@ Supported Format:
   - 1.23k (1.23*10^3)
   - 1.23m (1.23*0.001)
   - 1.23u (1.23*0.000001)
+  - Special Float: `e`,`-e`,`pi`,`-pi`,`inf`,`+inf`,`-inf`,`NaN`
 ```
 
 ### Complex(DBL/SGL)
 
 String of `a+bi` or `a-bi` stands of complex data type. `a` and `b` is supporting all Float format.
 
-
 ### Timestamp
 
-**Condition1**
+_**Condition1**_
 
 `TimeStamp String(FormatString)`is supported. `FormatString` in "" will be used to parse `TimeStamp String`.
 
-```
+``` text
 "2023-10-11 22:54:33(%<%Y-%m-%d %H:%M:%S>T)" equal to UTC timestamp string "2023-10-11T14:54:33.000Z".
 ```
 
-**Condition2**
+_**Condition2**_
 
 No time string format included in string, ISO8601 UTC standard is used.
 
-```
+``` text
 "2023-10-31T14:49:39.597Z" is valid.
 "2023-10-31T22:49:39.597+08:00" is valid.
 ```
 
 ### Enum
 
-**Condition1**
+_**Condition1**_
 
 Enum = {AAA,BBBB,CCCC}
 
- - String "AAA" will be converted to Enum(AAA), IntegerValue = 0
- - String "CCC" will be converted to Enum(CCC), IntegerValue = 2
+- String "AAA" will be converted to Enum(AAA), IntegerValue = 0
+- String "CCC" will be converted to Enum(CCC), IntegerValue = 2
 
-**Condition2**
+_**Condition2**_
 
 Enum = {1- AAA,5 - BBBB, 9 - CCCC}
 
- - String "AAA" will be converted to Enum(1- AAA), IntegerValue = 0
- - String "5" will be converted to Enum(5 - BBBB), IntegerValue = 1
- - String "9 - CCCC" will be converted to Enum(9 - CCCC), IntegerValue = 2
+- String "AAA" will be converted to Enum(1- AAA), IntegerValue = 0
+- String "5" will be converted to Enum(5 - BBBB), IntegerValue = 1
+- String "9 - CCCC" will be converted to Enum(9 - CCCC), IntegerValue = 2
 
 ### Array
 
@@ -118,13 +119,13 @@ Enum = {1- AAA,5 - BBBB, 9 - CCCC}
 
 `a,b,c,d,e` and `[a,b,c,d,e]` stands for 5 elements array
 
-```
+``` text
 a b c d e
 ```
 
 `a;b;c;d;e` and `[a;b;c;d;e]` stands for 5 elements array
 
-```
+``` text
 a
 b
 c
@@ -134,13 +135,12 @@ e
 
 `a1, b1, c1, d1, e1; a2, b2, c2, d2, e2` and `[a1, b1, c1, d1, e1; a2, b2, c2, d2, e2]` stands for 2*5 2D array
 
-```
+``` text
 a1 b1 c1 d1 e1
 a2 b2 c2 d2 e2
 ```
 
 ### Cluster
-
 
 ':' is used for separating name and value, ';' is usd for separating elements. '{' & '}' are used for boundary symbol. If it's not within other array/cluster, boundary symbol is not indispensable. Not all elements should be described but the changing ones.
 It's helpful for CSM to reduce configuration setting API numbers. You can defined the configuration within a cluster and one single setting API for the config API.
@@ -148,7 +148,8 @@ It's helpful for CSM to reduce configuration setting API numbers. You can define
 **Example:**
 
 Suppose a cluster as below:
-```
+
+``` text
 typedef cluster{
 Boolean b;
 String str;
@@ -166,5 +167,5 @@ Other Datatype will be treated as variant and use CSM-HexStr for data transforma
 
 ## Know Issue
 
-1.  **Cluster in Array is not fully supported. Need to imporve.**
-2.  **2D array in cluster is not supported now. Need to imporve.**
+1. **Cluster in Array is not fully supported. Need to improve.**
+2. **2D array in cluster is not supported now. Need to improve.**
