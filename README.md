@@ -28,6 +28,10 @@ It Follows CSM's rule. '->|' '->' '-@' '-&' '>>' ',' ';' should be replaced with
 
 ### Boolean
 
+_**special case**_:
+
+- For Boolean, empty string will be converted to the input prototype value
+
 ``` text
 TRUE/FALSE String Pairs:
   - T/F
@@ -42,6 +46,10 @@ TRUE/FALSE String Pairs:
 ```
 
 ### Integer
+
+_**special case**_:
+
+- For Integer, empty string will be converted to the input prototype value
 
 ``` text
 Supported format:
@@ -59,6 +67,10 @@ Supported format:
 
 ### Float(DBL/SGL)
 
+_**special case**_:
+
+- For SGL/DBL, empty string will be converted to the input prototype value
+
 ``` text
 Supported Format:
   - 1.2345
@@ -75,7 +87,15 @@ Supported Format:
 
 String of `a+bi` or `a-bi` stands of complex data type. `a` and `b` is supporting all Float format.
 
+_**special case**_:
+
+- For Complex, empty string will be converted to the input prototype value
+
 ### Timestamp
+
+_**special case**_:
+
+- For Timestamp, empty string will be converted to current time.
 
 _**Condition1**_
 
@@ -115,6 +135,10 @@ Enum = {1- AAA,5 - BBBB, 9 - CCCC}
 
 ',' is used for element separator, ';' is usd for row separator. '[' & ']' are used for boundary symbol. If it's not in cluster, boundary symbol is not indispensable.
 
+_**special case**_:
+
+- Empty String will be ignored and the prototype input will be used as output.
+
 **Example:**
 
 `a,b,c,d,e` and `[a,b,c,d,e]` stands for 5 elements array
@@ -145,6 +169,11 @@ a2 b2 c2 d2 e2
 ':' is used for separating name and value, ';' is usd for separating elements. '{' & '}' are used for boundary symbol. If it's not within other array/cluster, boundary symbol is not indispensable. Not all elements should be described but the changing ones.
 It's helpful for CSM to reduce configuration setting API numbers. You can defined the configuration within a cluster and one single setting API for the config API.
 
+_**special case**_:
+
+- Empty String will be ignored and the prototype input will be used as output.
+- if no name is given, the string input will be converted to the first element of cluster. This is useful to make the first element primary.
+
 **Example:**
 
 Suppose a cluster as below:
@@ -160,6 +189,8 @@ U32 integer
 `b:On` and `{b:On}` stands for change the input cluster's boolean b to TRUE only. Other elements keep as before.
 
 `b:On;str:abcdef` and `{b:On;str:abcdef}` stands for change the input cluster's boolean b to TRUE and String str to "abcdef".  Other elements keep as before.
+
+`On`,`{On}` are similar to `{b:On}`. The first element of cluster will be changed to TRUE.
 
 #### Other DataType
 
