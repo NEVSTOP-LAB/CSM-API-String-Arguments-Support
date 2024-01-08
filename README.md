@@ -28,6 +28,10 @@ It Follows CSM's rule. '->|' '->' '-@' '-&' '>>' ',' ';' should be replaced with
 
 ### Boolean
 
+`special case`:
+
+- For Boolean, empty string will be converted to the input prototype value
+
 ``` text
 TRUE/FALSE String Pairs:
   - T/F
@@ -42,6 +46,10 @@ TRUE/FALSE String Pairs:
 ```
 
 ### Integer
+
+`special case`:
+
+- For Integer, empty string will be converted to the input prototype value
 
 ``` text
 Supported format:
@@ -59,6 +67,10 @@ Supported format:
 
 ### Float(DBL/SGL)
 
+`special case`:
+
+- For SGL/DBL, empty string will be converted to the input prototype value
+
 ``` text
 Supported Format:
   - 1.2345
@@ -75,7 +87,15 @@ Supported Format:
 
 String of `a+bi` or `a-bi` stands of complex data type. `a` and `b` is supporting all Float format.
 
+`special case`:
+
+- For Complex, empty string will be converted to the input prototype value
+
 ### Timestamp
+
+`special case`:
+
+- For Timestamp, empty string will be converted to current time.
 
 _**Condition1**_
 
