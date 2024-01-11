@@ -5,6 +5,11 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
+	<Item Name="Utility" Type="Folder">
+		<Item Name="CSM - Timestamp to API String Arguments.vi" Type="VI" URL="../CSM - Timestamp to API String Arguments.vi"/>
+		<Item Name="CSM - Module VI Ref.vi" Type="VI" URL="../CSM - Module VI Ref.vi"/>
+		<Item Name="CSM - Convert HexStr to Data.vim" Type="VI" URL="../CSM - Convert HexStr to Data.vim"/>
+	</Item>
 	<Item Name="Support" Type="Folder">
 		<Item Name="nevstop" Type="Folder">
 			<Item Name="Compare Two Numbers_csm.vim" Type="VI" URL="../_Support/Compare Two Numbers_csm.vim"/>
@@ -21,11 +26,6 @@
 		<Item Name="Convert API String Arguments to Data(variant).vi" Type="VI" URL="../_Support/Convert API String Arguments to Data(variant).vi"/>
 		<Item Name="Data To API String Arguments.vi" Type="VI" URL="../_Support/Data To API String Arguments.vi"/>
 		<Item Name="Query Data as API String Arguments(variant).vi" Type="VI" URL="../_Support/Query Data as API String Arguments(variant).vi"/>
-	</Item>
-	<Item Name="Utility" Type="Folder">
-		<Item Name="CSM - Timestamp to API String Arguments.vi" Type="VI" URL="../CSM - Timestamp to API String Arguments.vi"/>
-		<Item Name="CSM - Module VI Ref.vi" Type="VI" URL="../CSM - Module VI Ref.vi"/>
-		<Item Name="CSM - Convert HexStr to Data.vim" Type="VI" URL="../CSM - Convert HexStr to Data.vim"/>
 	</Item>
 	<Item Name="Convert API String Arguments to Data.vim" Type="VI" URL="../Convert API String Arguments to Data.vim"/>
 	<Item Name="Convert Data To API String Arguments.vim" Type="VI" URL="../Convert Data To API String Arguments.vim"/>
