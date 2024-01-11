@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2024-01-08 17:29:27" Creator="yaoli" Comments="" ID="e45adc18e056345836f56eed988e730b">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2024-01-11 11:46:58" Creator="yaoli" Comments="" ID="cfa4f32da8b80f7493a99e44d35f1649">
   <Library_General_Settings>
     <Package_File_Name>NEVSTOP_lib_CSM_API_String_Arguments_Support</Package_File_Name>
     <Library_Version>2024.1.0.15</Library_Version>
@@ -67,7 +67,8 @@ More information for the supported datatype format, please visit: https://github
 [update] #21 Special Float: `e`,`-e`,`pi`,`-pi`,`inf`,`+inf`,`-inf`,`NaN` support
 [update] #23 for cluster, if the label is not specified, the string will be converted to first element
 [update] For SGL/DBL/Integer/Path/Complex/Array/Cluster, empty string will be converted to the input prototype value 
-[update] For Timestamp, empty string will be converted to current time.</Release_Notes>
+[update] For Timestamp, empty string will be converted to current time.
+[update] #25 throw error when data name is not defined in cluster prototype in "Convert API String Arguments to Data¡° API</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
