@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2024-02-19 11:19:51" Creator="yaoli" Comments="" ID="eca98de41c62a67c832eff1bc31e1a58">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2024-03-21 15:01:23" Creator="yaoli" Comments="" ID="a51b1fa031a581ab0327d4dbaec404ac">
   <Library_General_Settings>
     <Package_File_Name>NEVSTOP_lib_CSM_API_String_Arguments_Support</Package_File_Name>
-    <Library_Version>2024.1.0.15</Library_Version>
+    <Library_Version>2024.3.0.15</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>vip</Library_Output_Folder>
@@ -62,7 +62,9 @@ More information for the supported datatype format, please visit: https://github
       <Copyright/>
       <Packager>NEVSTOP</Packager>
       <URL>https://github.com/NEVSTOP-LAB/CSM-API-String-Arugments-Support</URL>
-      <Release_Notes>[fix] #28 Fix bugs for Complex data type</Release_Notes>
+      <Release_Notes>[fix] #32 fix the sign problem of complex numbers
+[update] #31 use SI format for float datatype
+[update] support n,p,f,G,T,p for float datatype</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
