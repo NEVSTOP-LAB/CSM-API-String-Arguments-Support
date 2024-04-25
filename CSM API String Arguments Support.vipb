@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2024-03-31 11:22:53" Creator="yaoli" Comments="" ID="b25e2b0f348d30ca15ebbc421e1ccca4">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2024-04-25 11:57:31" Creator="yaoli" Comments="" ID="c01c2412946a157a026404eecdbbef3c">
   <Library_General_Settings>
     <Package_File_Name>NEVSTOP_lib_CSM_API_String_Arguments_Support</Package_File_Name>
     <Library_Version>2024.4.0.15</Library_Version>
@@ -62,7 +62,8 @@ More information for the supported datatype format, please visit: https://github
       <Copyright/>
       <Packager>NEVSTOP</Packager>
       <URL>https://github.com/NEVSTOP-LAB/CSM-API-String-Arugments-Support</URL>
-      <Release_Notes>[update] update palette</Release_Notes>
+      <Release_Notes>[fix] #35 support the data if too large or too small. Support Y,Z,E,a,z,y for float
+[update] update palette</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
