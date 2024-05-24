@@ -26,6 +26,8 @@
 			<Item Name="String to Boolean_csm.vi" Type="VI" URL="../_Support/String to Boolean_csm.vi"/>
 			<Item Name="String To Float_csm.vi" Type="VI" URL="../_Support/String To Float_csm.vi"/>
 			<Item Name="String To Number(I64)_csm.vi" Type="VI" URL="../_Support/String To Number(I64)_csm.vi"/>
+			<Item Name="1D Array to String_csm.vi" Type="VI" URL="../_Support/1D Array to String_csm.vi"/>
+			<Item Name="End of Line Constant (bug fix)_csm.vi" Type="VI" URL="../_Support/End of Line Constant (bug fix)_csm.vi"/>
 		</Item>
 		<Item Name="Convert API String Arguments to Data(variant).vi" Type="VI" URL="../_Support/Convert API String Arguments to Data(variant).vi"/>
 		<Item Name="Data To API String Arguments.vi" Type="VI" URL="../_Support/Data To API String Arguments.vi"/>
