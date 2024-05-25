@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2024-05-25 00:04:11" Creator="yaoli" Comments="" ID="58eb65245f8f8f86d5b4b608af378d95">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2024-05-25 14:58:25" Creator="yaoli" Comments="" ID="f2ebe1f8a000d41518ec1b05e2f5f20f">
   <Library_General_Settings>
     <Package_File_Name>NEVSTOP_lib_CSM_API_String_Arguments_Support</Package_File_Name>
     <Library_Version>2024.5.0.15</Library_Version>
@@ -18,7 +18,7 @@
   <Advanced_Settings>
     <Package_Dependencies>
       <Additional_External_Dependencies>labview_open_source_lib_epoch_datetime &gt;=1.2.0.6</Additional_External_Dependencies>
-      <Additional_External_Dependencies>nevstop_lib_communicable_state_machine &gt;=2023.11.11.215032</Additional_External_Dependencies>
+      <Additional_External_Dependencies>nevstop_lib_communicable_state_machine &gt;=2024.5.25.143204</Additional_External_Dependencies>
       <Package_Conflicts>nevstop_lib_jki_state_machine++ &gt;=2023.8.5.2239</Package_Conflicts>
     </Package_Dependencies>
     <Custom_Action_VIs>
@@ -62,7 +62,7 @@ More information for the supported datatype format, please visit: https://github
 [add] add CSM - Query CSM VI Ref By API String.vi.  CSM - Module VI Ref.vi is obsolete.
 [fix] #38 remove . if no digital number is behind.
 [update] #37 update template
-[update] Embedding duplicated copies of OpenG VIs and enhancing efficiency</Release_Notes>
+[update] UsingEmbedded copies of OpenG VIs and enhancing efficiency</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>

@@ -27,19 +27,6 @@
 			<Item Name="String To Float_csm.vi" Type="VI" URL="../_Support/String To Float_csm.vi"/>
 			<Item Name="String To Number(I64)_csm.vi" Type="VI" URL="../_Support/String To Number(I64)_csm.vi"/>
 		</Item>
-		<Item Name="OpenG" Type="Folder">
-			<Item Name="String to 1D Array_csm.vi" Type="VI" URL="../_Support/_openG/String to 1D Array_csm.vi"/>
-			<Item Name="1D Array to String_csm.vi" Type="VI" URL="../_Support/_openG/1D Array to String_csm.vi"/>
-			<Item Name="End of Line Constant (bug fix)_csm.vi" Type="VI" URL="../_Support/_openG/End of Line Constant (bug fix)_csm.vi"/>
-			<Item Name="Get Data Name_csm.vi" Type="VI" URL="../_Support/_openG/Get Data Name_csm.vi"/>
-			<Item Name="Get Header from TD_csm.vi" Type="VI" URL="../_Support/_openG/Get Header from TD_csm.vi"/>
-			<Item Name="Get Last PString_csm.vi" Type="VI" URL="../_Support/_openG/Get Last PString_csm.vi"/>
-			<Item Name="Get PString_csm.vi" Type="VI" URL="../_Support/_openG/Get PString_csm.vi"/>
-			<Item Name="Get Strings from Enum_csm.vi" Type="VI" URL="../_Support/_openG/Get Strings from Enum_csm.vi"/>
-			<Item Name="Set Data Name_csm.vi" Type="VI" URL="../_Support/_openG/Set Data Name_csm.vi"/>
-			<Item Name="Set Enum String Value_csm.vi" Type="VI" URL="../_Support/_openG/Set Enum String Value_csm.vi"/>
-			<Item Name="Array of VData to VCluster_csm.vi" Type="VI" URL="../_Support/_openG/Array of VData to VCluster_csm.vi"/>
-		</Item>
 		<Item Name="Convert API String Arguments to Data(variant).vi" Type="VI" URL="../_Support/Convert API String Arguments to Data(variant).vi"/>
 		<Item Name="Data To API String Arguments.vi" Type="VI" URL="../_Support/Data To API String Arguments.vi"/>
 		<Item Name="Query Data as API String Arguments(variant).vi" Type="VI" URL="../_Support/Query Data as API String Arguments(variant).vi"/>
