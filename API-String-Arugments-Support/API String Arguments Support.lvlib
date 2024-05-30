@@ -5,10 +5,14 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
+	<Item Name="Obsolete" Type="Folder">
+		<Item Name="CSM - Module VI Ref.vi" Type="VI" URL="../CSM - Module VI Ref.vi"/>
+	</Item>
 	<Item Name="Utility" Type="Folder">
 		<Item Name="CSM - Timestamp to API String Arguments.vi" Type="VI" URL="../CSM - Timestamp to API String Arguments.vi"/>
-		<Item Name="CSM - Module VI Ref.vi" Type="VI" URL="../CSM - Module VI Ref.vi"/>
 		<Item Name="CSM - Convert HexStr to Data.vim" Type="VI" URL="../CSM - Convert HexStr to Data.vim"/>
+		<Item Name="CSM - Query CSM VI Ref By API String.vi" Type="VI" URL="../CSM - Query CSM VI Ref By API String.vi"/>
+		<Item Name="CSM - Query Internal Data Names By API String.vi" Type="VI" URL="../CSM - Query Internal Data Names By API String.vi"/>
 	</Item>
 	<Item Name="Support" Type="Folder">
 		<Item Name="nevstop" Type="Folder">
