@@ -204,7 +204,7 @@ U32 integer
 
 `On`,`{On}` are similar to `{b:On}`. The first element of cluster will be changed to TRUE.
 
-`on;abcdef,13` and `{on;abcdef,13}` stands for change the input cluster's boolean b to TRUE and String str to "abcdef", U32 integer to 13. If the cluster has more elements, they will keep as before.
+`on;abcdef;13` and `{on;abcdef;13}` stands for change the input cluster's boolean b to TRUE and String str to "abcdef", U32 integer to 13. If the cluster has more elements, they will keep as before.
 
 #### Other DataType
 
