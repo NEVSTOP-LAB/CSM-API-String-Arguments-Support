@@ -30,6 +30,12 @@
 		<Item Name="Convert API String Arguments to Data(variant).vi" Type="VI" URL="../_Support/Convert API String Arguments to Data(variant).vi"/>
 		<Item Name="Data To API String Arguments.vi" Type="VI" URL="../_Support/Data To API String Arguments.vi"/>
 		<Item Name="Query Data as API String Arguments(variant).vi" Type="VI" URL="../_Support/Query Data as API String Arguments(variant).vi"/>
+		<Item Name="Boolean Strings.vi" Type="VI" URL="../_Support/Boolean Strings.vi"/>
+		<Item Name="API String Config Global.vi" Type="VI" URL="../_Support/API String Config Global.vi"/>
+	</Item>
+	<Item Name="Configuration" Type="Folder">
+		<Item Name="API String - Add Boolean Strings.vi" Type="VI" URL="../API String - Add Boolean Strings.vi"/>
+		<Item Name="API String - Remove Boolean Strings.vi" Type="VI" URL="../API String - Remove Boolean Strings.vi"/>
 	</Item>
 	<Item Name="Convert API String Arguments to Data.vim" Type="VI" URL="../Convert API String Arguments to Data.vim"/>
 	<Item Name="Convert Data To API String Arguments.vim" Type="VI" URL="../Convert Data To API String Arguments.vim"/>
