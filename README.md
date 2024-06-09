@@ -45,6 +45,9 @@ TRUE/FALSE String Pairs:
   - Non-null/null
 ```
 
+> [!NOTE]
+> You  can use `API String - Add Boolean Strings.vi` or `API String - Remove Boolean Strings.vi` to set your own boolean string to be used.
+
 ### Integer
 
 _**special case**_:
@@ -64,6 +67,7 @@ Supported format:
   - 10k
   - 1M
 ```
+
 
 ### Float(DBL/SGL)
 
@@ -94,6 +98,9 @@ Supported Format:
   - 1.23y (1.23*10^-24)
   - Special Float: `e`,`-e`,`pi`,`-pi`,`inf`,`+inf`,`-inf`,`NaN`
 ```
+
+> [!NOTE]
+> Default precision is 6. You can change it by `API String - Set Float Precision.vi`
 
 ### Complex(DBL/SGL)
 
