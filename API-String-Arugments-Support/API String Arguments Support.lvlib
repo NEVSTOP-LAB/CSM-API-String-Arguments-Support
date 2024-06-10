@@ -34,7 +34,7 @@
 		<Item Name="Float Precision.vi" Type="VI" URL="../_Support/Float Precision.vi"/>
 		<Item Name="API String Config Global.vi" Type="VI" URL="../_Support/API String Config Global.vi"/>
 	</Item>
-	<Item Name="Configuration" Type="Folder">
+	<Item Name="Configure" Type="Folder">
 		<Item Name="API String - Add Boolean Strings.vi" Type="VI" URL="../API String - Add Boolean Strings.vi"/>
 		<Item Name="API String - Remove Boolean Strings.vi" Type="VI" URL="../API String - Remove Boolean Strings.vi"/>
 		<Item Name="API String - List Boolean Strings.vi" Type="VI" URL="../API String - List Boolean Strings.vi"/>
