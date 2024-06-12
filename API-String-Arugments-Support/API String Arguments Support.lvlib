@@ -15,24 +15,22 @@
 		<Item Name="CSM - Query Internal Data Names By API String.vi" Type="VI" URL="../CSM - Query Internal Data Names By API String.vi"/>
 	</Item>
 	<Item Name="Support" Type="Folder">
-		<Item Name="nevstop" Type="Folder">
-			<Item Name="Compare Two Numbers_csm.vim" Type="VI" URL="../_Support/Compare Two Numbers_csm.vim"/>
-			<Item Name="Concatenate Strings If not Empty_csm.vi" Type="VI" URL="../_Support/Concatenate Strings If not Empty_csm.vi"/>
-			<Item Name="Data To SingleElementsArray_csm.vi" Type="VI" URL="../_Support/Data To SingleElementsArray_csm.vi"/>
-			<Item Name="Data To SingleElementsArray_with_itself_csm.vi" Type="VI" URL="../_Support/Data To SingleElementsArray_with_itself_csm.vi"/>
-			<Item Name="Indexed String To Enum_csm.vi" Type="VI" URL="../_Support/Indexed String To Enum_csm.vi"/>
-			<Item Name="Match Multiple Pattern_csm.vi" Type="VI" URL="../_Support/Match Multiple Pattern_csm.vi"/>
-			<Item Name="SingleElementsArray To Data_csm.vi" Type="VI" URL="../_Support/SingleElementsArray To Data_csm.vi"/>
-			<Item Name="String to Boolean_csm.vi" Type="VI" URL="../_Support/String to Boolean_csm.vi"/>
-			<Item Name="String To Float_csm.vi" Type="VI" URL="../_Support/String To Float_csm.vi"/>
-			<Item Name="String To Number(I64)_csm.vi" Type="VI" URL="../_Support/String To Number(I64)_csm.vi"/>
-		</Item>
 		<Item Name="Convert API String Arguments to Data(variant).vi" Type="VI" URL="../_Support/Convert API String Arguments to Data(variant).vi"/>
 		<Item Name="Data To API String Arguments.vi" Type="VI" URL="../_Support/Data To API String Arguments.vi"/>
 		<Item Name="Query Data as API String Arguments(variant).vi" Type="VI" URL="../_Support/Query Data as API String Arguments(variant).vi"/>
 		<Item Name="Boolean Strings.vi" Type="VI" URL="../_Support/Boolean Strings.vi"/>
 		<Item Name="Float Precision.vi" Type="VI" URL="../_Support/Float Precision.vi"/>
 		<Item Name="API String Config Global.vi" Type="VI" URL="../_Support/API String Config Global.vi"/>
+		<Item Name="Compare Two Numbers_csm.vim" Type="VI" URL="../_Support/Compare Two Numbers_csm.vim"/>
+		<Item Name="Concatenate Strings If not Empty_csm.vi" Type="VI" URL="../_Support/Concatenate Strings If not Empty_csm.vi"/>
+		<Item Name="Data To SingleElementsArray_csm.vi" Type="VI" URL="../_Support/Data To SingleElementsArray_csm.vi"/>
+		<Item Name="Data To SingleElementsArray_with_itself_csm.vi" Type="VI" URL="../_Support/Data To SingleElementsArray_with_itself_csm.vi"/>
+		<Item Name="Indexed String To Enum_csm.vi" Type="VI" URL="../_Support/Indexed String To Enum_csm.vi"/>
+		<Item Name="Match Multiple Pattern_csm.vi" Type="VI" URL="../_Support/Match Multiple Pattern_csm.vi"/>
+		<Item Name="SingleElementsArray To Data_csm.vi" Type="VI" URL="../_Support/SingleElementsArray To Data_csm.vi"/>
+		<Item Name="String to Boolean_csm.vi" Type="VI" URL="../_Support/String to Boolean_csm.vi"/>
+		<Item Name="String To Float_csm.vi" Type="VI" URL="../_Support/String To Float_csm.vi"/>
+		<Item Name="String To Number(I64)_csm.vi" Type="VI" URL="../_Support/String To Number(I64)_csm.vi"/>
 	</Item>
 	<Item Name="Configure" Type="Folder">
 		<Item Name="API String - Add Boolean Strings.vi" Type="VI" URL="../API String - Add Boolean Strings.vi"/>
