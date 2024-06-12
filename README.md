@@ -73,7 +73,7 @@ Supported format:
 
 _**special case**_:
 
-- For SGL/DBL, empty string will be converted to the input prototype value
+- For SGL/DBL, empty string will be converted to the input prototype value.
 
 ``` text
 Supported Format:
@@ -101,6 +101,23 @@ Supported Format:
 
 > [!NOTE]
 > Default precision is 6. You can change it by `API String - Set Float Precision.vi`
+
+Float String with Unit is also supported.
+
+_**special case**_:
+
+- If there is a `space` between float string and unit string, all strings include notation behind float string is recognized as unit string.
+
+> 1.23mA : Float: 1.23m; Unit: A
+> 1.23 mA : Float: 1.23; Unit: mA
+
+- For scientific notation mode, any string behind the float string is recognized as unit string.
+
+> 1.23E+5mA: Float: 1.23E+5; Unit: mA
+> 1.23E+5 mA: Float: 1.23E+5; Unit: mA
+
+- Unit is not supported for `e`,`-e`,`pi`,`-pi`,`inf`,`+inf`,`-inf`,`NaN`
+
 
 ### Complex(DBL/SGL)
 
