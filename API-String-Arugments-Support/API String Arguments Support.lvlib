@@ -30,6 +30,7 @@
 		<Item Name="String to Boolean_csm.vi" Type="VI" URL="../_Support/String to Boolean_csm.vi"/>
 		<Item Name="String To Float_csm.vi" Type="VI" URL="../_Support/String To Float_csm.vi"/>
 		<Item Name="String To Number(I64)_csm.vi" Type="VI" URL="../_Support/String To Number(I64)_csm.vi"/>
+		<Item Name="Strip Tag in Tag Value Pair.vi" Type="VI" URL="../_Support/Strip Tag in Tag Value Pair.vi"/>
 	</Item>
 	<Item Name="Configure" Type="Folder">
 		<Item Name="API String - Add Boolean Strings.vi" Type="VI" URL="../API String - Add Boolean Strings.vi"/>
