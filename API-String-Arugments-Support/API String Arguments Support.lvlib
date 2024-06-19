@@ -20,7 +20,6 @@
 		<Item Name="Query Data as API String Arguments(variant).vi" Type="VI" URL="../_Support/Query Data as API String Arguments(variant).vi"/>
 		<Item Name="Boolean Strings.vi" Type="VI" URL="../_Support/Boolean Strings.vi"/>
 		<Item Name="Float Precision.vi" Type="VI" URL="../_Support/Float Precision.vi"/>
-		<Item Name="API String Config Global.vi" Type="VI" URL="../_Support/API String Config Global.vi"/>
 		<Item Name="Compare Two Numbers_csm.vim" Type="VI" URL="../_Support/Compare Two Numbers_csm.vim"/>
 		<Item Name="Concatenate Strings If not Empty_csm.vi" Type="VI" URL="../_Support/Concatenate Strings If not Empty_csm.vi"/>
 		<Item Name="Data To SingleElementsArray_csm.vi" Type="VI" URL="../_Support/Data To SingleElementsArray_csm.vi"/>
