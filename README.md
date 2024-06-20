@@ -48,6 +48,9 @@ TRUE/FALSE String Pairs:
 > [!NOTE]
 > You  can use `API String - Add Boolean Strings.vi` or `API String - Remove Boolean Strings.vi` to set your own boolean string to be used.
 
+> [!NOTE]
+> Tag-value pair could be parsed correctly. Tag will be stripped before conversion.
+
 ### Integer
 
 _**special case**_:
@@ -68,6 +71,8 @@ Supported format:
   - 1M
 ```
 
+> [!NOTE]
+> Tag-value pair could be parsed correctly. Tag will be stripped before conversion.
 
 ### Float(DBL/SGL)
 
@@ -102,7 +107,11 @@ Supported Format:
 > [!NOTE]
 > Default precision is 6. You can change it by `API String - Set Float Precision.vi`
 
-Float String with Unit is also supported.
+> [!NOTE]
+> Tag-value pair could be parsed correctly. Tag will be stripped before conversion.
+
+> [!NOTE]
+> Float String with Unit is also supported.
 
 _**special case**_:
 
@@ -118,7 +127,6 @@ _**special case**_:
 
 - Unit is not supported for `e`,`-e`,`pi`,`-pi`,`inf`,`+inf`,`-inf`,`NaN`
 
-
 ### Complex(DBL/SGL)
 
 String of `a+bi` or `a-bi` stands of complex data type. `a` and `b` is supporting all Float format.
@@ -126,6 +134,9 @@ String of `a+bi` or `a-bi` stands of complex data type. `a` and `b` is supportin
 _**special case**_:
 
 - For Complex, empty string will be converted to the input prototype value
+
+> [!NOTE]
+> Tag-value pair could be parsed correctly. Tag will be stripped before conversion.
 
 ### Timestamp
 
