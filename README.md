@@ -45,6 +45,12 @@ TRUE/FALSE String Pairs:
   - Non-null/null
 ```
 
+> [!NOTE]
+> You  can use `API String - Add Boolean Strings.vi` or `API String - Remove Boolean Strings.vi` to set your own boolean string to be used.
+
+> [!NOTE]
+> Tag-value pair could be parsed correctly. Tag will be stripped before conversion.
+
 ### Integer
 
 _**special case**_:
@@ -65,11 +71,14 @@ Supported format:
   - 1M
 ```
 
+> [!NOTE]
+> Tag-value pair could be parsed correctly. Tag will be stripped before conversion.
+
 ### Float(DBL/SGL)
 
 _**special case**_:
 
-- For SGL/DBL, empty string will be converted to the input prototype value
+- For SGL/DBL, empty string will be converted to the input prototype value.
 
 ``` text
 Supported Format:
@@ -95,6 +104,29 @@ Supported Format:
   - Special Float: `e`,`-e`,`pi`,`-pi`,`inf`,`+inf`,`-inf`,`NaN`
 ```
 
+> [!NOTE]
+> Default precision is 6. You can change it by `API String - Set Float Precision.vi`
+
+> [!NOTE]
+> Tag-value pair could be parsed correctly. Tag will be stripped before conversion.
+
+> [!NOTE]
+> Float String with Unit is also supported.
+
+_**special case**_:
+
+- If there is a `space` between float string and unit string, all strings include notation behind float string is recognized as unit string.
+
+> 1.23mA : Float: 1.23m; Unit: A
+> 1.23 mA : Float: 1.23; Unit: mA
+
+- For scientific notation mode, any string behind the float string is recognized as unit string.
+
+> 1.23E+5mA: Float: 1.23E+5; Unit: mA
+> 1.23E+5 mA: Float: 1.23E+5; Unit: mA
+
+- Unit is not supported for `e`,`-e`,`pi`,`-pi`,`inf`,`+inf`,`-inf`,`NaN`
+
 ### Complex(DBL/SGL)
 
 String of `a+bi` or `a-bi` stands of complex data type. `a` and `b` is supporting all Float format.
@@ -102,6 +134,9 @@ String of `a+bi` or `a-bi` stands of complex data type. `a` and `b` is supportin
 _**special case**_:
 
 - For Complex, empty string will be converted to the input prototype value
+
+> [!NOTE]
+> Tag-value pair could be parsed correctly. Tag will be stripped before conversion.
 
 ### Timestamp
 
@@ -178,7 +213,7 @@ a2 b2 c2 d2 e2
 
 ### Cluster
 
-':' is used for separating name and value, ';' is usd for separating elements. '{' & '}' are used for boundary symbol. If it's not within other array/cluster, boundary symbol is not indispensable. Not all elements should be described but the changing ones.
+':' is used for separating name and value, ';' is usd for separating elements. '{' & '}' are used for boundary symbol. If it's not within other array/cluster, boundary symbol is not indispensable.
 It's helpful for CSM to reduce configuration setting API numbers. You can defined the configuration within a cluster and one single setting API for the config API.
 
 _**special case**_:
@@ -198,13 +233,25 @@ U32 integer
 }
 ```
 
-`b:On` and `{b:On}` stands for change the input cluster's boolean b to TRUE only. Other elements keep as before.
+**Case 1: Tag:Value Mode**
 
-`b:On;str:abcdef` and `{b:On;str:abcdef}` stands for change the input cluster's boolean b to TRUE and String str to "abcdef".  Other elements keep as before.
+In this mode, the input string is a list of tag:value pairs. The tag is the name of the element in the cluster, and the value is the value to be set. The tag and value are separated by a colon. The tag:value pairs are separated by a semicolon. Not all elements should be described but the changing ones. The order of the elements is not important.
 
-`On`,`{On}` are similar to `{b:On}`. The first element of cluster will be changed to TRUE.
+> `b:On` and `{b:On}` stands for change the input cluster's boolean b to TRUE only. Other elements keep as before.
+>
+> `b:On;str:abcdef` and `{b:On;str:abcdef}` stands for change the input cluster's boolean b to TRUE and String str to "abcdef".  Other elements keep as before.
 
-`on;abcdef;13` and `{on;abcdef;13}` stands for change the input cluster's boolean b to TRUE and String str to "abcdef", U32 integer to 13. If the cluster has more elements, they will keep as before.
+**Case 2: Value Only Mode**
+
+In this mode, the input string is a list of values. The values are separated by a semicolon. The order of the elements is important. The first element will be set to the first element of the cluster, the second element will be set to the second element of the cluster, and so on. If the input string has fewer elements than the cluster, the remaining elements will be unchanged.
+
+> `on;abcdef;13` and `{on;abcdef;13}` stands for change the input cluster's boolean b to TRUE and String str to "abcdef", U32 integer to 13. If the cluster has more elements, they will keep as before.
+
+**Case 3: First Element Mode**
+
+In this mode, the input string is a single value. The first element of the cluster will be set to this value. The remaining elements will be unchanged.
+
+> `On`,`{On}` are similar to `{b:On}`. The first element of cluster will be changed to TRUE.
 
 #### Other DataType
 
