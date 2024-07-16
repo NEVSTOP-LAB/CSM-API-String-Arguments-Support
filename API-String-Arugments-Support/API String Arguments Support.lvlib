@@ -13,6 +13,7 @@
 		<Item Name="CSM - Convert HexStr to Data.vim" Type="VI" URL="../CSM - Convert HexStr to Data.vim"/>
 		<Item Name="CSM - Query CSM VI Ref By API String.vi" Type="VI" URL="../CSM - Query CSM VI Ref By API String.vi"/>
 		<Item Name="CSM - Query Internal Data Names By API String.vi" Type="VI" URL="../CSM - Query Internal Data Names By API String.vi"/>
+		<Item Name="CSM - Broadcast Data As API String.vim" Type="VI" URL="../CSM - Broadcast Data As API String.vim"/>
 	</Item>
 	<Item Name="Support" Type="Folder">
 		<Item Name="Convert API String Arguments to Data(variant).vi" Type="VI" URL="../_Support/Convert API String Arguments to Data(variant).vi"/>
