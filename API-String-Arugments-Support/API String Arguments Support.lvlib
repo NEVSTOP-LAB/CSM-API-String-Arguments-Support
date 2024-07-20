@@ -16,7 +16,6 @@
 		<Item Name="CSM - Broadcast Data As API String.vim" Type="VI" URL="../CSM - Broadcast Data As API String.vim"/>
 	</Item>
 	<Item Name="Support" Type="Folder">
-		<Item Name="Get Strings from Enum__csm.vi" Type="VI" URL="../_Support/Get Strings from Enum__csm.vi"/>
 		<Item Name="Convert API String Arguments to Data(variant).vi" Type="VI" URL="../_Support/Convert API String Arguments to Data(variant).vi"/>
 		<Item Name="Data To API String Arguments.vi" Type="VI" URL="../_Support/Data To API String Arguments.vi"/>
 		<Item Name="Query Data as API String Arguments(variant).vi" Type="VI" URL="../_Support/Query Data as API String Arguments(variant).vi"/>
