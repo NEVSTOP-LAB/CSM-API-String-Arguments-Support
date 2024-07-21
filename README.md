@@ -163,6 +163,29 @@ No time string format included in string, ISO8601 UTC standard is used.
 
 ### Enum
 
+Indexed Enum is defined as Enum Strings composed with [number] [separator] [enum String].
+
+> hex Number, -- as separator
+>
+> - 0x01 -- boolean
+> - 0x02 -- string
+> - 0x04 -- dbl
+> - 0x08 -- number
+>
+> binary Number, -- as separator
+>
+> - 0b0001 __ boolean
+> - 0b0010 __ string
+> - 0b0100 __ dbl
+> - 0b1000 __ number
+>
+> Decided Number, == as separator
+>
+> - 1 == boolean
+> - 2 == string
+> - 4 == dbl
+> - 8 == number
+
 _**Condition1**_
 
 Enum = {AAA,BBBB,CCCC}

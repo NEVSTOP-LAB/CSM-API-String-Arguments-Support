@@ -32,6 +32,7 @@
 		<Item Name="String To Float_csm.vi" Type="VI" URL="../_Support/String To Float_csm.vi"/>
 		<Item Name="String To Number(I64)_csm.vi" Type="VI" URL="../_Support/String To Number(I64)_csm.vi"/>
 		<Item Name="Strip Tag in Tag Value Pair.vi" Type="VI" URL="../_Support/Strip Tag in Tag Value Pair.vi"/>
+		<Item Name="String To Indexed Enum_csm.vi" Type="VI" URL="../_Support/String To Indexed Enum_csm.vi"/>
 		<Item Name="Indexed Enum to Numeric_csm.vim" Type="VI" URL="../_Support/Indexed Enum to Numeric_csm.vim"/>
 		<Item Name="Numeric to Indexed Enum_csm.vim" Type="VI" URL="../_Support/Numeric to Indexed Enum_csm.vim"/>
 	</Item>
