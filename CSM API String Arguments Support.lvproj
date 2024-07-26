@@ -31,6 +31,7 @@
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="API String Arguments Support.lvlib" Type="Library" URL="../API-String-Arugments-Support/API String Arguments Support.lvlib"/>
+		<Item Name="Convert API String to Cluster(PlantMode).vim" Type="VI" URL="../API-String-Arugments-Support/Convert API String to Cluster(PlantMode).vim"/>
 		<Item Name="CSM API String Arguments Support.vipb" Type="Document" URL="../CSM API String Arguments Support.vipb"/>
 		<Item Name="README.md" Type="Document" URL="../README.md"/>
 		<Item Name="Dependencies" Type="Dependencies">
