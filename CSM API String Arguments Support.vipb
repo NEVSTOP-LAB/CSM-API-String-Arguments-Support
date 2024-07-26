@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2024-07-26 16:07:18" Creator="yaoli" Comments="" ID="20263a11e5aaa8c1b67fe5a4e70ea2f6">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2024-07-26 16:50:02" Creator="yaoli" Comments="" ID="1adcd438c51ca7a25b1859e6c07b9fcd">
   <Library_General_Settings>
     <Package_File_Name>NEVSTOP_lib_CSM_API_String_Arguments_Support</Package_File_Name>
     <Library_Version>2024.7.0.15</Library_Version>
@@ -63,6 +63,7 @@ More information for the supported datatype format, please visit: https://github
 [add] add CSM - Broadcast Data As API String.vim in utility palette
 [add] add utility vi for conversion between 'indexed enum¡® and number.
 [fix] Fix the bug that prevents correct parsing of strings starting with digits. For example, ¡°10V¡± could not be converted to Enum(10mV|1V|10V) as intended.
+[fix] Fix bug that Binary Number is not corrected converted to number. e.g. 0b1 -x-&gt; -1. This is wrong.
 [update] update some VI icons</Release_Notes>
     </Description>
     <Destinations>
