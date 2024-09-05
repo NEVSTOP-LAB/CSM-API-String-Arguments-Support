@@ -279,8 +279,3 @@ In this mode, the input string is a single value. The first element of the clust
 #### Other DataType
 
 Other Datatype will be treated as variant and use CSM-HexStr for data transformation.
-
-## Know Issue
-
-1. **Cluster in Array is not fully supported. Need to improve.**
-2. **2D array in cluster is not supported now. Need to improve.**
