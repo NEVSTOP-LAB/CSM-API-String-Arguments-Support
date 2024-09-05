@@ -16,6 +16,16 @@
 		<Item Name="CSM - Broadcast Data As API String.vim" Type="VI" URL="../CSM - Broadcast Data As API String.vim"/>
 	</Item>
 	<Item Name="Support" Type="Folder">
+		<Item Name="StringAnalyze" Type="Folder">
+			<Item Name="bracket code.vi" Type="VI" URL="../_Support/StringAnalyze/bracket code.vi"/>
+			<Item Name="check if brackets Matched 2.vi" Type="VI" URL="../_Support/StringAnalyze/check if brackets Matched 2.vi"/>
+			<Item Name="check if brackets Matched.vi" Type="VI" URL="../_Support/StringAnalyze/check if brackets Matched.vi"/>
+			<Item Name="Get content in brackets.vi" Type="VI" URL="../_Support/StringAnalyze/Get content in brackets.vi"/>
+			<Item Name="String to 1D Array 2.vi" Type="VI" URL="../_Support/StringAnalyze/String to 1D Array 2.vi"/>
+			<Item Name="Strip brackets with Option.vi" Type="VI" URL="../_Support/StringAnalyze/Strip brackets with Option.vi"/>
+			<Item Name="Strip brackets.vi" Type="VI" URL="../_Support/StringAnalyze/Strip brackets.vi"/>
+		</Item>
+		<Item Name="API String to 1D Array.vi" Type="VI" URL="../_Support/API String to 1D Array.vi"/>
 		<Item Name="Convert API String Arguments to Data(variant).vi" Type="VI" URL="../_Support/Convert API String Arguments to Data(variant).vi"/>
 		<Item Name="Data To API String Arguments.vi" Type="VI" URL="../_Support/Data To API String Arguments.vi"/>
 		<Item Name="Query Data as API String Arguments(variant).vi" Type="VI" URL="../_Support/Query Data as API String Arguments(variant).vi"/>
