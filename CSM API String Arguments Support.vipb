@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2024-09-05 14:19:24" Creator="yaoli" Comments="" ID="2d162a0c2ca3d533cf224c1e443450d2">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2024-09-10 14:11:05" Creator="yaoli" Comments="" ID="678069bf7aeb5a3513bf9b9605ccbdc5">
   <Library_General_Settings>
     <Package_File_Name>NEVSTOP_lib_CSM_API_String_Arguments_Support</Package_File_Name>
     <Library_Version>2024.8.0.15</Library_Version>
@@ -185,6 +185,9 @@ More information for the supported datatype format, please visit: https://github
       </Exclusions>
       <Exclusions>
         <Path>LICENSE</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>testcases</Path>
       </Exclusions>
       <Place_Folder_Contents>
         <Path/>
