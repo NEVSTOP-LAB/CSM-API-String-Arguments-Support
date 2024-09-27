@@ -279,8 +279,6 @@ Cluster subCluster
 
 **Not Tag Mode**
 
-对于簇，支持只输入数据字符串，这些值由分号分隔。
-
 For Cluster, only input data string is supported. These value strings are separated by semicolons(;).
 
 - The order of the elements is important. The first element will be set as the first element of the cluster, the second element will be set as the second element of the cluster, and so on.
