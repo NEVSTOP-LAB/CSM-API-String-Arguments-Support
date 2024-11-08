@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2024-10-09 14:03:37" Creator="yaoli" Comments="" ID="a3b7ee3cb23dc64607f662d0dd4d1187">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2024-11-08 17:39:17" Creator="yaoli" Comments="" ID="a537d11b9e028d7db07ba06f60d9b5ab">
   <Library_General_Settings>
     <Package_File_Name>NEVSTOP_lib_CSM_API_String_Arguments_Support</Package_File_Name>
     <Library_Version>2024.10.0.15</Library_Version>
@@ -58,11 +58,7 @@ More information for the supported datatype format, please visit: https://github
       <Copyright/>
       <Packager>NEVSTOP</Packager>
       <URL>https://github.com/NEVSTOP-LAB/CSM-API-String-Arugments-Support</URL>
-      <Release_Notes>[update] add  "VI Reference"  case in template.
-[update] #56 update error handling in template
-[fix] #58 Fix issue with nested array. Thanks @hautale for reporting this issue.
-[fix] #2 Fix issue with 2d array in cluster, which is a known issue before.
-[fix] Fix issue with cluster array/ 2D Cluster Array, which is a known issue before.</Release_Notes>
+      <Release_Notes>[add] #66 add "Set Float Format String.vi" to configure the format of floating point numbers.</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
