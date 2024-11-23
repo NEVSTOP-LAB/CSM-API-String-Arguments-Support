@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2024-11-23 21:58:37" Creator="yaoli" Comments="" ID="3efd729df52e01326c53aec0f5c6dfb4">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2024-11-23 22:02:57" Creator="yaoli" Comments="" ID="91ecb054626a1d1e0adc91162f38a9c9">
   <Library_General_Settings>
     <Package_File_Name>NEVSTOP_lib_CSM_API_String_Arguments_Support</Package_File_Name>
     <Library_Version>2024.11.0.15</Library_Version>
@@ -49,12 +49,7 @@
 - Cluster
 - Other(use CSM-Hexstr)
 
-More information for the supported datatype format, please visit: https://github.com/NEVSTOP-LAB/CSM-API-String-Arugments-Support
-
-## Know Issue
-
-1.  **Cluster in Array is not fully supported. Need to imporve.**
-2.  **2D array in cluster is not supported now. Need to imporve.**</Description>
+More information for the supported datatype format, please visit: https://github.com/NEVSTOP-LAB/CSM-API-String-Arugments-Support</Description>
       <Copyright/>
       <Packager>NEVSTOP</Packager>
       <URL>https://github.com/NEVSTOP-LAB/CSM-API-String-Arugments-Support</URL>
