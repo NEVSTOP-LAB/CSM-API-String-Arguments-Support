@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2025-01-06 15:21:36" Creator="yaoli" Comments="" ID="fcc643a81fe6c537bb118d8533c092d1">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2025-01-06 16:42:22" Creator="yaoli" Comments="" ID="7bdf177d2352c6f4d3aeba6fe6de49f8">
   <Library_General_Settings>
     <Package_File_Name>NEVSTOP_lib_CSM_API_String_Arguments_Support</Package_File_Name>
     <Library_Version>2025.1.0.15</Library_Version>
@@ -54,6 +54,7 @@ More information for the supported datatype format, please visit: https://github
       <Packager>NEVSTOP</Packager>
       <URL>https://github.com/NEVSTOP-LAB/CSM-API-String-Arugments-Support</URL>
       <Release_Notes>[important] #71 Add an option to support just parsing part of the elements in string for cluster datatype
+[important] #76 [sub-cluster].[leaf-element name] is also OK as tag name for cluster datatype
 [update] #74 Simplify templates following CSM Core's update
 [update] #73 update connector pane of CSM - Convert HexStr to Data.vim
 [update] improve a little bit for empty string case
