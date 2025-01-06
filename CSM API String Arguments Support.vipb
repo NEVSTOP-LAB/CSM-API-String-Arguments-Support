@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2025-01-05 21:18:10" Creator="yaoli" Comments="" ID="22b3ca7299838f74fe4e87239e32ada4">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2025-01-06 15:21:36" Creator="yaoli" Comments="" ID="fcc643a81fe6c537bb118d8533c092d1">
   <Library_General_Settings>
     <Package_File_Name>NEVSTOP_lib_CSM_API_String_Arguments_Support</Package_File_Name>
     <Library_Version>2025.1.0.15</Library_Version>
@@ -56,6 +56,7 @@ More information for the supported datatype format, please visit: https://github
       <Release_Notes>[important] #71 Add an option to support just parsing part of the elements in string for cluster datatype
 [update] #74 Simplify templates following CSM Core's update
 [update] #73 update connector pane of CSM - Convert HexStr to Data.vim
+[update] improve a little bit for empty string case
 [fix] #75 now Set Float Format String.vi support format like "%_6g"</Release_Notes>
     </Description>
     <Destinations>
