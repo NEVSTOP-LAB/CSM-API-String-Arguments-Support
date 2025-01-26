@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2024-12-03 13:54:32" Creator="yaoli" Comments="" ID="594cd4e77d2d659aca59e303fa27ca3d">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2025-01-13 16:35:21" Creator="yaoli" Comments="" ID="818c2763545630aea5ac5ee9f6a7168d">
   <Library_General_Settings>
     <Package_File_Name>NEVSTOP_lib_CSM_API_String_Arguments_Support</Package_File_Name>
-    <Library_Version>2024.12.0.15</Library_Version>
+    <Library_Version>2025.1.0.15</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>vip</Library_Output_Folder>
@@ -53,7 +53,13 @@ More information for the supported datatype format, please visit: https://github
       <Copyright/>
       <Packager>NEVSTOP</Packager>
       <URL>https://github.com/NEVSTOP-LAB/CSM-API-String-Arugments-Support</URL>
-      <Release_Notes>[update] update control palette icon</Release_Notes>
+      <Release_Notes>[important] #71 Add an option to support just parsing part of the elements in string for cluster datatype
+[important] #76 &lt;sub-cluster&gt;.&lt;leaf-element name&gt; is also OK as tag name for cluster datatype
+[update] #77 No-tag mode is supported in Convert Data To API String Arguments.vim
+[update] #74 Simplify templates following CSM Core's update
+[update] #73 update connector pane of CSM - Convert HexStr to Data.vim
+[update] improve a little bit for empty string case
+[fix] #75 now Set Float Format String.vi support format like "%_6g"</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
