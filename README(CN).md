@@ -18,6 +18,8 @@
 - 字符串(String)
 - 路径(Path)
 - 布尔(Boolean)
+- 标签(Tag)
+- Refnum(IVI/VISA)
 - 整数(I8,I16,I32,I64,U8,U16,U32,U64)
 - 浮点数(DBL/SGL)
 - 复数(DBL/SGL)
@@ -27,9 +29,12 @@
 - 簇(Cluster)
 - 其他(使用CSM-Hexstr)
 
-### 字符串(String)/路径(Path)
+### 字符串(String)/路径(Path)/Refnum(IVI/VISA)/标签(Tag)
 
 字符串/路径遵循CSM的规则。'->|' '->' '-@' '-&' '>>' ',' ';' 在传递之前应该被替换为 %[Hex] 字符串。效果与使用 **CSM AdvanceAPI\CSM Make String Arguments Safe.vi** 相同。
+
+> [!NOTE]
+> LabVIEW 的 Refnum(IVI/VISA) 和标签(Tag) 也支持，规则与 String 类型相同。
 
 ### 布尔(Boolean)
 
