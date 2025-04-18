@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2025-04-18 21:34:40" Creator="yaoli" Comments="" ID="600b9ecc35f5dab448d98022ecc39ee0">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2025-04-18 22:00:24" Creator="yaoli" Comments="" ID="6a335cc94ce85667e641c7c80946c9bb">
   <Library_General_Settings>
     <Package_File_Name>NEVSTOP_lib_CSM_API_String_Arguments_Support</Package_File_Name>
     <Library_Version>2025.4.0.2</Library_Version>
@@ -53,7 +53,7 @@ More information for the supported datatype format, please visit: https://github
       <Copyright/>
       <Packager>NEVSTOP</Packager>
       <URL>https://github.com/NEVSTOP-LAB/CSM-API-String-Arugments-Support</URL>
-      <Release_Notes/>
+      <Release_Notes>[update] #80 when any cluster element has no name, use no-tag mode automatically for "Data To API String Arguments.vi"</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
