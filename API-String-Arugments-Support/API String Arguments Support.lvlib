@@ -54,6 +54,7 @@
 		<Item Name="API String - Float Format String.vi" Type="VI" URL="../API String - Float Format String.vi"/>
 		<Item Name="API String - Set Float Precision.vi" Type="VI" URL="../API String - Set Float Precision.vi"/>
 		<Item Name="API String - Set Float Format String.vi" Type="VI" URL="../API String - Set Float Format String.vi"/>
+		<Item Name="API String - Is Supported Datatype.vi" Type="VI" URL="../API String - Is Supported Datatype.vi"/>
 	</Item>
 	<Item Name="Convert API String Arguments to Data.vim" Type="VI" URL="../Convert API String Arguments to Data.vim"/>
 	<Item Name="Convert Data To API String Arguments.vim" Type="VI" URL="../Convert Data To API String Arguments.vim"/>
