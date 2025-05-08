@@ -17,7 +17,7 @@ Two more templates which include "Data: Get Configuration", "Data: Set Configura
 - String
 - Path
 - Tag
-- Refnum(IVI/VISA)
+- Refnum(IVI/VISA/UserDefinedRefnumTag)
 - Boolean
 - Integer(I8,I16,I32,I64,U8,U16,U32,U64)
 - Float(DBL/SGL)
@@ -28,12 +28,12 @@ Two more templates which include "Data: Get Configuration", "Data: Set Configura
 - Cluster
 - Other(use CSM-Hexstr)
 
-### String/Path/Refnum(IVI/VISA)/Tag
+### String/Path/Refnum(IVI/VISA/UserDefinedRefnumTag)/Tag
 
 For String/Path datatype, CSM Key words '->|' '->' '-@' '-&' '>>' ',' ';' will be replaced with %[Hex] String before passing, which is as same as using **CSM AdvanceAPI\CSM Make String Arguments Safe.vi**.
 
 > [!NOTE]
-> Refnum(IVI/VISA) and Tag also support, and the rule is the same as String type.
+> Refnum(IVI/VISA/UserDefinedRefnumTag) and Tag also support, and the rule is the same as String type.
 
 ### Boolean
 

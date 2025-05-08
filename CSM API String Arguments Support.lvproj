@@ -35,6 +35,7 @@
 		</Item>
 		<Item Name="API String Arguments Support.lvlib" Type="Library" URL="../API-String-Arugments-Support/API String Arguments Support.lvlib"/>
 		<Item Name="CSM API String Arguments Support.vipb" Type="Document" URL="../CSM API String Arguments Support.vipb"/>
+		<Item Name="README(CN).md" Type="Document" URL="../README(CN).md"/>
 		<Item Name="README.md" Type="Document" URL="../README.md"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
