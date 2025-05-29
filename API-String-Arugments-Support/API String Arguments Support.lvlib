@@ -24,6 +24,7 @@
 			<Item Name="String to 1D Array 2.vi" Type="VI" URL="../_Support/StringAnalyze/String to 1D Array 2.vi"/>
 			<Item Name="Strip brackets with Option.vi" Type="VI" URL="../_Support/StringAnalyze/Strip brackets with Option.vi"/>
 			<Item Name="Strip brackets.vi" Type="VI" URL="../_Support/StringAnalyze/Strip brackets.vi"/>
+			<Item Name="Cluster API String Mode.vi" Type="VI" URL="../_Support/StringAnalyze/Cluster API String Mode.vi"/>
 		</Item>
 		<Item Name="API String to 1D Array.vi" Type="VI" URL="../_Support/API String to 1D Array.vi"/>
 		<Item Name="Cluster API String to 1D Array(Splite Nested Cluster).vi" Type="VI" URL="../_Support/Cluster API String to 1D Array(Splite Nested Cluster).vi"/>
