@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2025-07-21 21:22:08" Creator="yaoli" Comments="" ID="e42c18c510ec1681927aec293f231f2a">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2025-08-14 15:32:48" Creator="yaoli" Comments="" ID="dfc8d1fe58cafb91518d6af43a688b97">
   <Library_General_Settings>
     <Package_File_Name>NEVSTOP_lib_CSM_API_String_Arguments_Support</Package_File_Name>
-    <Library_Version>2025.7.0.1</Library_Version>
+    <Library_Version>2025.8.0.1</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>vip</Library_Output_Folder>
@@ -18,7 +18,7 @@
   <Advanced_Settings>
     <Package_Dependencies>
       <Additional_External_Dependencies>labview_open_source_lib_epoch_datetime &gt;=1.2.0.6</Additional_External_Dependencies>
-      <Additional_External_Dependencies>nevstop_lib_communicable_state_machine &gt;=2025.5.27.213756</Additional_External_Dependencies>
+      <Additional_External_Dependencies>nevstop_lib_communicable_state_machine &gt;=2025.7.30.163451</Additional_External_Dependencies>
       <Package_Conflicts>nevstop_lib_jki_state_machine++ &gt;=2023.8.5.2239</Package_Conflicts>
     </Package_Dependencies>
     <Custom_Action_VIs>
@@ -53,7 +53,7 @@ More information for the supported datatype format, please visit: https://github
       <Copyright/>
       <Packager>NEVSTOP</Packager>
       <URL>https://github.com/NEVSTOP-LAB/CSM-API-String-Arugments-Support</URL>
-      <Release_Notes>[fix] #86 use breadth-first traversal instead of depth-first traversal for vested-cluster</Release_Notes>
+      <Release_Notes/>
     </Description>
     <Destinations>
       <Toolkit_VIs>
