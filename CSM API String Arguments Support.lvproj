@@ -24,6 +24,12 @@
 		<Item Name="_test" Type="Folder" URL="../_test">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="addons" Type="Folder" URL="../addons">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
+		<Item Name="Arguments" Type="Folder" URL="../Arguments">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="Example" Type="Folder" URL="../Example">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
@@ -33,7 +39,6 @@
 		<Item Name="testcase" Type="Folder">
 			<Item Name="testcase-Supported-Datatype.lvclass" Type="LVClass" URL="../testcases/testcase-Supported-Datatype/testcase-Supported-Datatype.lvclass"/>
 		</Item>
-		<Item Name="API String Arguments Support.lvlib" Type="Library" URL="../API-String-Arugments-Support/API String Arguments Support.lvlib"/>
 		<Item Name="CSM API String Arguments Support.vipb" Type="Document" URL="../CSM API String Arguments Support.vipb"/>
 		<Item Name="README(CN).md" Type="Document" URL="../README(CN).md"/>
 		<Item Name="README.md" Type="Document" URL="../README.md"/>
