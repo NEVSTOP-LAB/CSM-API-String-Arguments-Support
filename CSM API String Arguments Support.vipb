@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2025-08-18 14:14:27" Creator="yaoli" Comments="" ID="8ffdf29ce86d88d4107defe2584a2332">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2025-09-03 23:31:10" Creator="yaoli" Comments="" ID="5fccae422ba276b13ef7139e971ee4f0">
   <Library_General_Settings>
     <Package_File_Name>NEVSTOP_lib_CSM_API_String_Arguments_Support</Package_File_Name>
-    <Library_Version>2025.8.0.1</Library_Version>
+    <Library_Version>2025.9.0.1</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>vip</Library_Output_Folder>
@@ -53,9 +53,7 @@ More information for the supported datatype format, please visit: https://github
       <Copyright/>
       <Packager>NEVSTOP</Packager>
       <URL>https://github.com/NEVSTOP-LAB/CSM-API-String-Arugments-Support</URL>
-      <Release_Notes>[add] Add a sub-palette in argument palette
-[update] #90 Mark "CSM - Query CSM VI Ref By API String.vi" as obsolete. Prompt user to use "CSM - Module VI Reference.vi" instead.
-[update] update dependency to latest version. </Release_Notes>
+      <Release_Notes/>
     </Description>
     <Destinations>
       <Toolkit_VIs>
