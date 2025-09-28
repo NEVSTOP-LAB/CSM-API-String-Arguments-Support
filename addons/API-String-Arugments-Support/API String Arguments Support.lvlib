@@ -26,13 +26,17 @@
 			<Item Name="Strip brackets.vi" Type="VI" URL="../_Support/StringAnalyze/Strip brackets.vi"/>
 			<Item Name="Cluster API String Mode.vi" Type="VI" URL="../_Support/StringAnalyze/Cluster API String Mode.vi"/>
 		</Item>
+		<Item Name="FGV" Type="Folder">
+			<Item Name="Boolean Strings.vi" Type="VI" URL="../_Support/Boolean Strings.vi"/>
+			<Item Name="Boolean Strings(lvlibp).vi" Type="VI" URL="../_Support/Boolean Strings(lvlibp).vi"/>
+			<Item Name="Float Precision.vi" Type="VI" URL="../_Support/Float Precision.vi"/>
+			<Item Name="Float Precision(lvlibp).vi" Type="VI" URL="../_Support/Float Precision(lvlibp).vi"/>
+		</Item>
 		<Item Name="API String to 1D Array.vi" Type="VI" URL="../_Support/API String to 1D Array.vi"/>
 		<Item Name="Cluster API String to 1D Array(Splite Nested Cluster).vi" Type="VI" URL="../_Support/Cluster API String to 1D Array(Splite Nested Cluster).vi"/>
 		<Item Name="Convert API String Arguments to Data(variant).vi" Type="VI" URL="../_Support/Convert API String Arguments to Data(variant).vi"/>
 		<Item Name="Data To API String Arguments.vi" Type="VI" URL="../_Support/Data To API String Arguments.vi"/>
 		<Item Name="Query Data as API String Arguments(variant).vi" Type="VI" URL="../_Support/Query Data as API String Arguments(variant).vi"/>
-		<Item Name="Boolean Strings.vi" Type="VI" URL="../_Support/Boolean Strings.vi"/>
-		<Item Name="Float Precision.vi" Type="VI" URL="../_Support/Float Precision.vi"/>
 		<Item Name="Compare Two Numbers_csm.vim" Type="VI" URL="../_Support/Compare Two Numbers_csm.vim"/>
 		<Item Name="Concatenate Strings If not Empty_csm.vi" Type="VI" URL="../_Support/Concatenate Strings If not Empty_csm.vi"/>
 		<Item Name="Data To SingleElementsArray_csm.vi" Type="VI" URL="../_Support/Data To SingleElementsArray_csm.vi"/>
