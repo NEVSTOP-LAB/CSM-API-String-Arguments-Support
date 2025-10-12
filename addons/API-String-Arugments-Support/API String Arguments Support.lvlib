@@ -14,6 +14,8 @@
 		<Item Name="CSM - Convert HexStr to Data.vim" Type="VI" URL="../CSM - Convert HexStr to Data.vim"/>
 		<Item Name="CSM - Query Internal Data Names By API String.vi" Type="VI" URL="../CSM - Query Internal Data Names By API String.vi"/>
 		<Item Name="CSM - Broadcast Data As API String.vim" Type="VI" URL="../CSM - Broadcast Data As API String.vim"/>
+		<Item Name="Text to Timestamp(RFC3339).vi" Type="VI" URL="../_Support/_JDP Science/Text to Timestamp(RFC3339).vi"/>
+		<Item Name="Timestamp to Text(RFC3339).vi" Type="VI" URL="../_Support/_JDP Science/Timestamp to Text(RFC3339).vi"/>
 	</Item>
 	<Item Name="Support" Type="Folder">
 		<Item Name="StringAnalyze" Type="Folder">
