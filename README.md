@@ -158,7 +158,7 @@ Timestamp strings use the format `TimeStamp_String(Format_String)`. The `Format_
 
 _**Special Case**_:
 
-If no time string format is included, the ISO8601 UTC standard is used by default.
+If no time string format is included, the RFC3339 standard is used by default.
 
 ```text
 "2023-10-31T14:49:39.597Z" is valid.

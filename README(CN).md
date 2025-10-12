@@ -158,7 +158,7 @@ _**特殊情况说明**_:
 
 _**特殊情况说明**_:
 
-当字符串不包含 `Format_String` 时，`TimeStamp_String` 应符合 ISO8601 UTC 标准格式。
+当字符串不包含 `Format_String` 时，`TimeStamp_String` 应符合 RFC3339 标准格式。
 
 ```text
 "2023-10-31T14:49:39.597Z" 为有效的表达方式.
