@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2025-10-12 21:32:46" Creator="yaoli" Comments="" ID="7a8bbf4799d4bff39203a26ae1f42bc6">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2025-11-25 18:56:08" Creator="yaoli" Comments="" ID="bf5e39f98067fe8d22eefffb7eaf5193">
   <Library_General_Settings>
     <Package_File_Name>NEVSTOP_lib_CSM_API_String_Arguments_Support</Package_File_Name>
-    <Library_Version>2025.10.0.1</Library_Version>
+    <Library_Version>2025.11.0.1</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>vip</Library_Output_Folder>
