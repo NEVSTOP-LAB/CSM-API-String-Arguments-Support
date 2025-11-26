@@ -107,3 +107,28 @@ API String 支持的Float 格式包括：普通浮点数、科学计数法以及
 - step1: 往INF方向的浮点数转换测试
 - step2: 往-INF方向的浮点数转换测试
 - step3: 10...0 字符串的转换测试
+
+### Float类型，API String 中加入单位（4.2. CSM API String (Float with Unit) to Float.vi）
+
+#### Overview
+
+演示API String中包含单位的浮点数转换为浮点数的示例。
+
+#### Introduction
+
+API String 带有单位的浮点数字符串也支持正确解析。
+
+如果浮点数字符串与单位字符串之间存在空格，则浮点数后面的所有内容（包括符号）都被识别为单位字符串。
+例如：1.23mA : 浮点数: 1.23m; 单位: A 1.23 mA : 浮点数: 1.23; 单位: mA
+
+对于科学计数法表示的浮点数，无论是否存在空格，浮点数后面的字符串都被识别为单位字符串。
+例如：1.23E+5mA: 浮点数: 1.23E+5; 单位: mA 1.23E+5 mA: 浮点数: 1.23E+5; 单位: mA
+
+e、-e、pi、-pi、inf、+inf、-inf 和 NaN 等特殊浮点数值不支持单位。
+
+#### Steps
+
+- step1: 不同情况的浮点数单位转换测试
+- step2：API String中的转换依赖于 String To Float_csm.vi，可以在函数选板找到这个函数。
+
+### 
