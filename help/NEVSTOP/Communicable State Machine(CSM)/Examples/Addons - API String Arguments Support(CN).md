@@ -16,6 +16,7 @@
 
 - step1: 所有的普通类型，空字符串会被转换为参考数据类型连接的数值。
 - step2: String 数据类型，空字符串会被转换为空字符串。
+- step3: timestamp 数据类型，空字符串会转换为当前时间。
 
 ## 2. CSM API String to Typical datatypes.vi
 
@@ -135,7 +136,7 @@ e、-e、pi、-pi、inf、+inf、-inf 和 NaN 等特殊浮点数值不支持单�
 
 #### Overview
 
-本范例用于演示 APIString 对于复数的支持。
+本范例用于演示 API String 对于复数的支持。
 
 #### Introduction
 
@@ -145,4 +146,25 @@ API String 支持复数类型。a+bi 或 a-bi 格式表示复数。其中 a 和 
 - 空字符串将转换为原型(Prototype)的输入值。
 - 标签-数据对(Tag:Value)可以被正确解析。标签仅用于提高可读性，转换过程中会被忽略。
 
-### 
+### Timestamp 类型(4.4 CSM API String to Timestamp.vi)
+
+#### Overview
+
+本范例用于演示 API String 对于时间戳的支持。
+
+#### Introduction
+
+API String 时间戳的标准格式为：TimeStamp_String(Format_String)。其中 Format_String 用于解析 TimeStamp_String。
+
+特殊情况说明:
+- 当字符串不包含 Format_String 时，TimeStamp_String 应符合 RFC3339 标准格式。
+- "2023-10-31T14:49:39.597Z" 为有效的表达方式.
+- "2023-10-31T22:49:39.597+08:00" 为有效的表达方式.
+- 对于时间戳，空字符串将转换为当前时间。
+
+#### steps
+
+- step1: 空字符串转换为当前时间
+- step2: 标准格式转换为时间戳
+- step3: timestamp转换为 API String，并被正确解析回时间戳数据类型
+- step4: TimeStamp_String(Format_String)格式的示例
