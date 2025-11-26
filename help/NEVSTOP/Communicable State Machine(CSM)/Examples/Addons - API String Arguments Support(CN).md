@@ -1,523 +1,538 @@
-# CSM Advance Example Description
+# CSM API String Arguments Support
 
-## Addons - API String Arguments Support
+## 1. Empty String to Typical data types.vi
 
-### Using within CSM - Get Module Configuration.vi
+### Overview
 
-#### Overview
+本文展示了CSM API参数中支持的空字符串转换为典型数据类型的示例。空字符串在大多数情况下会被转换为参考数据类型连接的数值。例外场景：
 
+- String 数据类型：空字符串会被转换为空字符串。
 
+### Introduction
 
+展示不同的空字符串转换为典型数据类型的示例。特别注意 String 数据类型的例外情况。界面会显示参考值和转换后的值，供用户比较。
 
+### Steps
 
-#### Introduction
+- step1: 所有的普通类型，空字符串会被转换为参考数据类型连接的数值。
+- step2: String 数据类型，空字符串会被转换为空字符串。
 
+## Using within CSM - Get Module Configuration.vi
 
+### Overview
 
 
 
-#### Steps
 
 
+### Introduction
 
 
 
-### CSM API String to Typical data types.vi
 
-#### Overview
 
+### Steps
 
 
 
 
-#### Introduction
 
+## CSM API String to Typical data types.vi
 
+### Overview
 
 
 
-#### Steps
 
 
+### Introduction
 
 
 
-### Typical data types to CSM API String.vi
 
-#### Overview
 
+### Steps
 
 
 
 
-#### Introduction
 
+## Typical data types to CSM API String.vi
 
+### Overview
 
 
 
-#### Steps
 
 
+### Introduction
 
 
 
-### Incorrect usage collections.vi
 
-#### Overview
 
+### Steps
 
 
 
 
-#### Introduction
 
+## Incorrect usage collections.vi
 
+### Overview
 
 
 
-#### Steps
 
 
+### Introduction
 
 
 
-### CSM API String to Float.vi
 
-#### Overview
 
+### Steps
 
 
 
 
-#### Introduction
 
+## CSM API String to Float.vi
 
+### Overview
 
 
 
-#### Steps
 
 
+### Introduction
 
 
 
-### CSM API String (Float with Unit) to Float.vi
 
-#### Overview
 
+### Steps
 
 
 
 
-#### Introduction
 
+## CSM API String (Float with Unit) to Float.vi
 
+### Overview
 
 
 
-#### Steps
 
 
+### Introduction
 
 
 
-### CSM API String to Complex Numeric.vi
 
-#### Overview
 
+### Steps
 
 
 
 
-#### Introduction
 
+## CSM API String to Complex Numeric.vi
 
+### Overview
 
 
 
-#### Steps
 
 
+### Introduction
 
 
 
-### CSM API String to TimeStamp.vi
 
-#### Overview
 
+### Steps
 
 
 
 
-#### Introduction
 
+## CSM API String to TimeStamp.vi
 
+### Overview
 
 
 
-#### Steps
 
 
+### Introduction
 
 
 
-### CSM API String to Enum(special format).vi
 
-#### Overview
 
+### Steps
 
 
 
 
-#### Introduction
 
+## CSM API String to Enum(special format).vi
 
+### Overview
 
 
 
-#### Steps
 
 
+### Introduction
 
 
 
-### CSM API String to Array.vi
 
-#### Overview
 
+### Steps
 
 
 
 
-#### Introduction
 
+## CSM API String to Array.vi
 
+### Overview
 
 
 
-#### Steps
 
 
+### Introduction
 
 
 
-### 1D-Cluster to CSM API String.vi
 
-#### Overview
 
+### Steps
 
 
 
 
-#### Introduction
 
+## 1D-Cluster to CSM API String.vi
 
+### Overview
 
 
 
-#### Steps
 
 
+### Introduction
 
 
 
-### 2D-Cluster to CSM API String.vi
 
-#### Overview
 
+### Steps
 
 
 
 
-#### Introduction
 
+## 2D-Cluster to CSM API String.vi
 
+### Overview
 
 
 
-#### Steps
 
 
+### Introduction
 
 
 
-### Cluster to CSM API String.vi
 
-#### Overview
 
+### Steps
 
 
 
 
-#### Introduction
 
+## Cluster to CSM API String.vi
 
+### Overview
 
 
 
-#### Steps
 
 
+### Introduction
 
 
 
-### CSM API String to Cluster.vi
 
-#### Overview
 
+### Steps
 
 
 
 
-#### Introduction
 
+## CSM API String to Cluster.vi
 
+### Overview
 
 
 
-#### Steps
 
 
+### Introduction
 
 
 
-### CSM API String to Cluster with 2D Array elements.vi
 
-#### Overview
 
+### Steps
 
 
 
 
-#### Introduction
 
+## CSM API String to Cluster with 2D Array elements.vi
 
+### Overview
 
 
 
-#### Steps
 
 
+### Introduction
 
 
 
-## Addons - MassData Parameter Support
 
-### MassData Argument Format.vi
 
-#### Overview
+### Steps
 
 
 
 
 
-#### Introduction
+# Addons - MassData Parameter Support
 
+## MassData Argument Format.vi
 
+### Overview
 
 
 
-#### Steps
 
 
+### Introduction
 
 
 
-### Show MassData Cache Status in FP.vi
 
-#### Overview
 
+### Steps
 
 
 
 
-#### Introduction
 
+## Show MassData Cache Status in FP.vi
 
+### Overview
 
 
 
-#### Steps
 
 
+### Introduction
 
 
 
-### MassData in Non-CSM Framework.vi
 
-#### Overview
 
+### Steps
 
 
 
 
-#### Introduction
 
+## MassData in Non-CSM Framework.vi
 
+### Overview
 
 
 
-#### Steps
 
 
+### Introduction
 
 
 
-### MassData in CSM.vi
 
-#### Overview
 
+### Steps
 
 
 
 
-#### Introduction
 
+## MassData in CSM.vi
 
+### Overview
 
 
 
-#### Steps
 
 
+### Introduction
 
 
 
-## Addons - INI Static Variable Support
 
-### Used as parameters parsed by CSM.vi
 
-#### Overview
+### Steps
 
 
 
 
 
-#### Introduction
+# Addons - INI Static Variable Support
 
+## Used as parameters parsed by CSM.vi
 
+### Overview
 
 
 
-#### Steps
 
 
+### Introduction
 
 
 
-### Load the corresponding configuration by providing the prototype.vi
 
-#### Overview
 
+### Steps
 
 
 
 
-#### Introduction
 
+## Load the corresponding configuration by providing the prototype.vi
 
+### Overview
 
 
 
-#### Steps
 
 
+### Introduction
 
 
 
-### In CSM API parameters.vi
 
-#### Overview
 
+### Steps
 
 
 
 
-#### Introduction
 
+## In CSM API parameters.vi
 
+### Overview
 
 
 
-#### Steps
 
 
+### Introduction
 
 
 
-### Multi-file configuration systemvi.vi
 
-#### Overview
 
+### Steps
 
 
 
 
-#### Introduction
 
+## Multi-file configuration systemvi.vi
 
+### Overview
 
 
 
-#### Steps
 
 
+### Introduction
 
 
 
-### Write and Read Configuration.vi
 
-#### Overview
 
+### Steps
 
 
 
 
-#### Introduction
 
+## Write and Read Configuration.vi
 
+### Overview
 
 
 
-#### Steps
 
 
+### Introduction
 
 
 
-### import Config.ini with __include section.vi
 
-#### Overview
 
+### Steps
 
 
 
 
-#### Introduction
 
+## import Config.ini with __include section.vi
 
+### Overview
 
 
 
-#### Steps
 
 
+### Introduction
 
 
 
-### Read Nested Variables.vi
 
-#### Overview
 
+### Steps
 
 
 
 
-#### Introduction
 
+## Read Nested Variables.vi
 
+### Overview
 
 
 
-#### Steps
+
+
+### Introduction
+
+
+
+
+
+### Steps
