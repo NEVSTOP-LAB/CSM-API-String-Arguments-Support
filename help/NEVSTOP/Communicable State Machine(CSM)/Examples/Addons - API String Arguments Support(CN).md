@@ -168,3 +168,43 @@ API String 时间戳的标准格式为：TimeStamp_String(Format_String)。其�
 - step2: 标准格式转换为时间戳
 - step3: timestamp转换为 API String，并被正确解析回时间戳数据类型
 - step4: TimeStamp_String(Format_String)格式的示例
+
+### Enum 类型(4.5 CSM API String to Enum(special format).vi)
+
+#### Overview
+
+本范例用于演示 API String 对于枚举类型的支持。
+
+#### Introduction
+
+API String Enum 定义为 [索引编号(index)][分隔符(separator)][枚举字符串] 格式的字符串。
+
+- 索引编号支持NUMERIC类型的所有表达方式。例如：0x01,0b0001。
+- 分隔符(separator)支持 =,-,_ 三种字符，重复个数不限。
+
+转换规则：
+
+- 转换规则1: 当没有索引编号时，通过字符串匹配进行转换。
+- 转换规则2: 当包含索引编号时，既可以通过字符串匹配转换，也可以通过索引编号匹配转换。
+
+示例1： 无索引编号的转换规则
+```
+示例：Enum = {AAA, BBBB, CCCC}
+
+字符串 "AAA" 将转换为 Enum(AAA)，数字值为 0
+字符串 "CCC" 将转换为 Enum(CCC)，数字值为 2
+```
+
+示例2： 有索引编号的转换规则
+```
+示例：Enum = {1- AAA, 5 - BBBB, 9 - CCCC}
+
+字符串 "AAA" 将转换为 Enum(1- AAA)，数字值为 0
+字符串 "5" 将转换为 Enum(5 - BBBB)，数字值为 1
+字符串 "9 - CCCC" 将转换为 Enum(9 - CCCC)，数字值为 2
+```
+
+
+
+
+
