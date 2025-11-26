@@ -317,6 +317,19 @@ Cluster 是一种复杂类型，它由其他的普通数据类型组成。本范
 - step9: 无标签模式，但是元素个数大于全部个数
 - step10: 多层嵌套下，tag的名称可以包含点号(.)，用于表示嵌套簇的层级, 没有歧义的情况下，可以只写最终元素的名称，或者部分子嵌套层级的名称
 
+## 一些复杂的情况
+
+###  7.1 Complex Cluster in Array.vi
+
+#### Overview
+
+通常 Array/Cluster 的嵌套是一个复杂的情况，本范例将展示复杂的Cluster Array 的 CSM API String 表达字符串。但是者并不是一个典型的推荐使用场景。
+
+###  7.2 Cluster with 2D Array elements.vi
+
+#### Overview
+
+通常 Array/Cluster 的嵌套是一个复杂的情况，本范例将展示2D Cluster Array 的 CSM API String 表达字符串。但是者并不是一个典型的推荐使用场景。
 
 
 
