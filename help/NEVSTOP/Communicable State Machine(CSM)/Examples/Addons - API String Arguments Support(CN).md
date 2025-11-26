@@ -17,6 +17,52 @@
 - step1: 所有的普通类型，空字符串会被转换为参考数据类型连接的数值。
 - step2: String 数据类型，空字符串会被转换为空字符串。
 
+## 2. CSM API String to Typical datatypes.vi
+
+### Overview
+
+本文展示了CSM API参数中支持的典型数据类型转换为字符串的示例。
+
+### Introduction
+
+本文展示了一些典型的字符串转换为典型的数据类型的实例。
+
+### Steps
+
+- step1: 路径字符串转换为 path 数据类型
+- step2: 字符串数据类型的转换
+- step3: 典型的boolean数据类型的描述可以转换为boolean数据类型。
+- step4: i32 数据类型转换
+- step5: dbl 数据类型的转换
+- step6： 普通的enum 类型转换
+- step7: 具有编号的 enum 数据类型可以只描述枚举字符串，
+- step8: 具有编号的 enum 数据类型转换也可以描述索引编号
+- step9: 一维数组类型转换
+- step10：cluster数据类型转换
+- step11: cluster array 数据类型转换
+- step12: 二维数组类型转换
+
+
+## 3. Incorrect usage collections.vi
+
+### overview
+
+一些不正确的API String 描述情况。
+
+### Instruction
+
+选择 Action 后，运行 VI 并查看结果，不正确的格式转换后与预期数据不匹配。
+
+### Introduction
+
+Cluster 数据类型是重点描述的情况，因为它的情况比较多。通常它的描述格式是：
+
+1. 标签-数据对(Tag:Value)模式
+2. 无标签模式
+
+本范例演示了一些不正确的API String 描述情况。
+
+
 ## Using within CSM - Get Module Configuration.vi
 
 ### Overview
