@@ -204,6 +204,53 @@ API String Enum 定义为 [索引编号(index)][分隔符(separator)][枚举字�
 字符串 "9 - CCCC" 将转换为 Enum(9 - CCCC)，数字值为 2
 ```
 
+## Array 数据类型的支持
+
+### 5.1 CSM API String to Array.vi
+
+#### Overview
+
+本范例用于演示 API String 对于数组类型的支持。
+
+#### Introduction
+
+API String中对于Array 的定义，逗号(,) 用于元素分隔，分号(;) 用于行分隔。方括号([ 和 ]) 用作边界符号。对于非复杂的混合数据类型，方括号可以省略。
+
+示例：
+
+- `a,b,c,d,e`  `[a,b,c,d,e]`，`[a;b;c;d;e]` 都表示一个包含5个元素的数组：
+- `a1, b1, c1, d1, e1; a2, b2, c2, d2, e2` 和 `[a1, b1, c1, d1, e1; a2, b2, c2, d2, e2]` 表示一个 2×5 的二维数组
+
+特殊情况说明:
+
+- 空字符串将转换为原型(Prototype)的输入值。
+
+#### Steps
+
+- step1: 空字符串转换为原型(Prototype)的输入值
+- step2: 一维数组转换
+- step3: 二维数组转换
+
+### 5.2 Cluster 1D Array to CSM API String.vi
+
+#### Overview
+
+本范例用于演示 Cluster 1D Array 的 CSM API String表达。
+
+#### Introduction
+
+Array 是一种复合数据类型，可能包含不同的数据类型。其中以 Cluster 最为复杂，本范例将展示1D Cluster Array 的 CSM API String 表达字符串。
+
+### 5.3 Cluster 2D Array to CSM API String.vi
+
+#### Overview
+
+本范例用于演示 Cluster 2D Array 的 CSM API String表达。
+
+#### Introduction
+
+Array 是一种复合数据类型，可能包含不同的数据类型。其中以 Cluster 最为复杂，本范例将展示2D Cluster Array 的 CSM API String 表达字符串。
+
 
 
 
