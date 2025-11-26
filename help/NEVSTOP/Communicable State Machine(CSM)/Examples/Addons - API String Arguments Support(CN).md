@@ -131,4 +131,18 @@ e、-e、pi、-pi、inf、+inf、-inf 和 NaN 等特殊浮点数值不支持单�
 - step1: 不同情况的浮点数单位转换测试
 - step2：API String中的转换依赖于 String To Float_csm.vi，可以在函数选板找到这个函数。
 
+### 复数(4.3 CSM API String to Complex Numeric.vi)
+
+#### Overview
+
+本范例用于演示 APIString 对于复数的支持。
+
+#### Introduction
+
+API String 支持复数类型。a+bi 或 a-bi 格式表示复数。其中 a 和 b 支持所有浮点数的表达方式。
+
+特殊情况说明：
+- 空字符串将转换为原型(Prototype)的输入值。
+- 标签-数据对(Tag:Value)可以被正确解析。标签仅用于提高可读性，转换过程中会被忽略。
+
 ### 
