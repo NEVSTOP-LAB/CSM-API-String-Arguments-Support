@@ -45,7 +45,6 @@
   - True/False
   - On/Off
   - Enable/Disable
-  - Active/Inactive
   - valid/Invalid
   - 1/0
   - Open/Close

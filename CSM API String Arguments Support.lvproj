@@ -33,6 +33,9 @@
 		<Item Name="Example" Type="Folder" URL="../Example">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="help" Type="Folder" URL="../help">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="Template" Type="Folder" URL="../Template">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
