@@ -120,7 +120,7 @@ The API String supports float formats such as standard floating-point numbers, s
 
 
 
-### Float Type with Units in API String (4.2. CSM API String (Float with Unit) to Float.vi)
+### Float with Unit (4.2. Float with Unit CSM API String to Float.vi)
 
 #### Overview
 

@@ -109,7 +109,7 @@ API String支持的Float格式包括：普通浮点数、科学计数法以及�
 - step2: 往-INF方向的浮点数转换测试
 - step3: 10...0 字符串的转换测试
 
-### Float类型，API String 中加入单位（4.2. CSM API String (Float with Unit) to Float.vi）
+### Float类型，API String 中加入单位 (4.2 Float with Unit CSM API String to Float.vi)
 
 #### Overview
 
