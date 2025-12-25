@@ -1,6 +1,6 @@
 # CSM-API-String-Arguments-Support
 
-[English](./README.md) | [中文](./README(CN).md)
+[English](./README.md) | [中文](./README(zh-cn).md)
 
 [![Installs](https://www.vipm.io/package/nevstop_lib_csm_api_string_arguments_support/badge.svg?metric=installs)](https://www.vipm.io/package/nevstop_lib_csm_api_string_arguments_support/)
 [![Stars](https://www.vipm.io/package/nevstop_lib_csm_api_string_arguments_support/badge.svg?metric=stars)](https://www.vipm.io/package/nevstop_lib_csm_api_string_arguments_support/)

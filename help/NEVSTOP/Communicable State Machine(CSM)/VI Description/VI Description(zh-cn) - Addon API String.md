@@ -1,337 +1,327 @@
 # CSM API String Addon
 
-> [!NOTE] API String ²ÎÊıÖ§³Ö
-> API String ²ÎÊıÖ§³ÖÓÃÓÚÔöÇ¿Í¨ĞÅ×´Ì¬»ú£¨CSM£©µÄAPI²ÎÊı¹¦ÄÜ£¬Ö§³ÖÒÔ´¿ÎÄ±¾¸ñÊ½´«µİ¸÷ÖÖÊı¾İÀàĞÍ£¬²¢ÌØ±ğÓÅ»¯ÁËÊÖ¶¯ÊäÈëÌåÑé¡£API String Î´¶¨Òå²ÎÊıÀàĞÍ£¨Argument Type£©£¬Í¨¹ı CSM - Argument Type.vi »ñÈ¡µÄ½á¹ûÎª¿Õ£¬Í¨³£ÔÚÄ¬ÈÏ·ÖÖ§ÖĞ´¦Àí¡£
-> Ö§³ÖµÄÊı¾İÀàĞÍ°üÀ¨£º
->   - ×Ö·û´® (String)
->   - Â·¾¶ (Path)
->   - ²¼¶ûÖµ (Boolean)
->   - ±êÇ© (Tag)
->   - ÒıÓÃºÅ (Refnum£¬°üÀ¨ IVI/VISA/UserDefinedRefnumTag)
->   - ÕûÊı (I8, I16, I32, I64, U8, U16, U32, U64)
->   - ¸¡µãÊı (DBL/SGL)
->   - ¸´Êı (DBL/SGL)
->   - Ê±¼ä´Á (Timestamp)
->   - Ã¶¾Ù (Enum)
->   - Êı×é (Array)
->   - ´Ø (Cluster)
->   - ÆäËûÀàĞÍ (Ê¹ÓÃ CSM-Hexstr ±íÊ¾)
-> ¸ü¶àÏêÏ¸ĞÅÏ¢Çë·ÃÎÊ£ºhttps://github.com/NEVSTOP-LAB/CSM-API-String-Arguments-Support
-> »ò²Î¿¼·¶Àı£¬ËùÓĞÊı¾İÀàĞÍ¾ùÓĞÏêÏ¸ËµÃ÷ºÍÊ¾Àı¡£
-
-> [!NOTE] TRUE ÖµµÄÄ¬ÈÏ×Ö·û´®
-> Ö§³Ö 1, Active, Enable, Non-null, On, T, True, valid, yes
-> ²»Çø·Ö´óĞ¡Ğ´
-
-> [!NOTE] FALSE ÖµµÄÄ¬ÈÏ×Ö·û´®
-> Ö§³Ö 0, Disable, F, False, Inactive, Invalid, No, Off, Void, null
-> ²»Çø·Ö´óĞ¡Ğ´
-
-> [!NOTE] ¸¡µãÊıÄ¬ÈÏ¸ñÊ½
-> ¸¡µãÊıÄ¬ÈÏ¸ñÊ½Îª "%.6p"
-
-> [!NOTE] ´øË÷ÒıµÄÃ¶¾ÙÀàĞÍ (Indexed Enum)
-> ¸ñÊ½Îª [Ë÷Òı±àºÅ(index)][·Ö¸ô·û(separator)][Ã¶¾Ù×Ö·û´®]£¬Ë÷Òı±àºÅÖ§³Ö¶àÖÖÊıÖµ±íÊ¾·½Ê½
-> 
-> Ë÷Òı±àºÅÊ¹ÓÃ == ·Ö¸ô·ûÊ¾Àı£º
-> 1 == boolean | 2 == string | 4 == dbl | 8 == number
+> [!NOTE]
+><b>API Stringå‚æ•°æ”¯æŒ</b>
 >
-> Ë÷Òı±àºÅÊ¹ÓÃ -- ·Ö¸ô·ûÊ¾Àı£º
-> 0x01 -- boolean | 0x02 -- string | 0x04 -- dbl | 0x08 -- number
+> API Stringå‚æ•°æ”¯æŒç”¨äºå¢å¼ºé€šä¿¡çŠ¶æ€æœº(CSM)çš„APIå‚æ•°åŠŸèƒ½ï¼Œæ”¯æŒä»¥çº¯æ–‡æœ¬æ ¼å¼ä¼ é€’å„ç§æ•°æ®ç±»å‹ï¼Œå¹¶ç‰¹åˆ«ä¼˜åŒ–äº†æ‰‹åŠ¨è¾“å…¥ä½“éªŒã€‚API Stringæœªå®šä¹‰å‚æ•°ç±»å‹(Argument Type)ï¼Œé€šè¿‡CSM - Argument Type VIè·å–çš„ç»“æœä¸ºç©ºï¼Œé€šå¸¸åœ¨é»˜è®¤åˆ†æ”¯ä¸­å¤„ç†ã€‚æ”¯æŒçš„æ•°æ®ç±»å‹åŒ…æ‹¬:
+> - å­—ç¬¦ä¸²(String)
+> - è·¯å¾„(Path)
+> - å¸ƒå°”å€¼(Boolean)
+> - æ ‡ç­¾(Tag)
+> - å¼•ç”¨å·(Refnumï¼ŒåŒ…æ‹¬IVI/VISA/UserDefinedRefnumTag)
+> - æ•´æ•°(I8, I16, I32, I64, U8, U16, U32, U64)
+> - æµ®ç‚¹æ•°(DBL/SGL)
+> - å¤æ•°(DBL/SGL)
+> - æ—¶é—´æˆ³(Timestamp)
+> - æšä¸¾(Enum)
+> - æ•°ç»„(Array)
+> - ç°‡(Cluster)
+> - å…¶ä»–ç±»å‹(ä½¿ç”¨ CSM-Hexstr è¡¨ç¤º)
 >
-> Ë÷Òı±àºÅÊ¹ÓÃ __ ·Ö¸ô·ûÊ¾Àı£º
-> 0b0001 __ boolean | 0b0100 __ dbl | 0b1000 __ number
-
-## API String ºËĞÄ¹¦ÄÜ
-
-### API String - Is Supported Datatype.vi
-
-ÅĞ¶ÏÊı¾İÀàĞÍÊÇ·ñÎª API String Ö§³ÖµÄ×ª»»Êı¾İÀàĞÍ
-
-> Ref: API String ²ÎÊıÖ§³Ö
-> Ref: CSM HEXSTR ¸ñÊ½
-
--- <b>ÊäÈë¿Ø¼ş (Controls)</b> --
-- <b>Data</b>: ÊäÈëÊı¾İ
-
--- <b>Êä³ö¿Ø¼ş (Indicators)</b> --
-- <b>Data(Dup)</b>: ÊäÈëÊı¾İ¸±±¾
-- <b>Supported Datatype?</b>: ÊÇ·ñÖ§³Ö API String µÄ²¼¶ûÖµ
-
-### Convert Data To API String Arguments.vim
-
-½«Êı¾İ×ª»»Îª API String ¸ñÊ½
-
-> Ref: API String ²ÎÊıÖ§³Ö
-
--- <b>ÊäÈë¿Ø¼ş (Controls)</b> --
-- <b>Data</b>: ÊäÈëÊı¾İ
-- <b>Reference Cluster Data</b>: ²Î¿¼´ØÊı¾İ£¬×ª»»´ØÊı¾İÊ±£¬»á±È½ÏÊäÈëÊı¾İºÍ²Î¿¼Êı¾İÖĞµÄÔªËØ£¬ÈôÍêÈ«Æ¥Åä£¬Ôò×ª»»½á¹û½«ºöÂÔ¸ÃÔªËØ
-- <b>No Tag Mode? (F)</b>: ¶ÔÓÚ´ØÊı¾İ£¬µ±Îª True Ê±£¬×ª»»Îª API String Ê±²»°üº¬±êÇ©ĞÅÏ¢
-
--- <b>Êä³ö¿Ø¼ş (Indicators)</b> --
-- <b>API String</b>: ×ª»»ºóµÄ API String ¸ñÊ½
-
-### Convert API String Arguments to Data.vim
-
-½« API String ×ª»»ÎªÏàÓ¦µÄÊı¾İÀàĞÍ
-
-> Ref: API String ²ÎÊıÖ§³Ö
-
--- <b>ÊäÈë¿Ø¼ş (Controls)</b> --
-- <b>API String</b>: API String ¸ñÊ½µÄÊäÈë×Ö·û´®
-- <b>Strict Label Check? (T)</b>: ÑÏ¸ñ±êÇ©¼ì²é£¬µ±Îª True Ê±£¬Èô²Î¿¼Êı¾İÖĞ²»°üº¬±êÇ©£¬×ª»»½«Ê§°Ü±¨´í
-- <b>Reference Type</b>: ²Î¿¼Êı¾İ
-
--- <b>Êä³ö¿Ø¼ş (Indicators)</b> --
-- <b>Data</b>: ×ª»»ºóµÄÊı¾İ
-
-### Query Data as API String Arguments.vim
-
-²éÑ¯´ØÊı¾İÖĞµÄÖ¸¶¨Êı¾İÏî£¬²¢×ª»»Îª API String ¸ñÊ½¡£
-
-Ó¦ÓÃ³¡¾°£ºÀıÈçÔÚ API String Addon °üº¬µÄĞÂ CSM Ä£¿éÄ£°åÖĞ£¬ĞÂÔöÁË "Data: Get Configuration" ×´Ì¬£¬ÔÚ´Ë×´Ì¬ÏÂ£¬Í¨¹ı·¢ËÍÏ£Íû²éÑ¯µÄÊı¾İÏîÃû³Æ£¬¼´¿É·µ»Ø¶ÔÓ¦µÄÊı¾İÏîÖµ¡£
-
-ÌØÊâÇé¿ö£ºÈô½« <b>Name</b> ÉèÖÃÎª "<list>"£¬½«·µ»ØËùÓĞ¿ÉÓÃÉèÖÃµÄÁĞ±í
-
--- <b>ÊäÈë¿Ø¼ş (Controls)</b> --
-- <b>Cluster Data</b>: ´ØÊı¾İ
-- <b>Name</b>: Êı¾İÃû³Æ
-
--- <b>Êä³ö¿Ø¼ş (Indicators)</b> --
-- <b>Cluster Data(dup)</b>: ´ØÊı¾İ¸±±¾
-- <b>API String</b>: API String ¸ñÊ½µÄ²éÑ¯½á¹û
-
-## ÅäÖÃ
-
-### API String - Add Boolean Strings.vi
-
-½«×Ô¶¨Òå²¼¶û×Ö·û´®Ìí¼Óµ½ API String ²¼¶ûÖµ½âÎöÁĞ±íÖĞ£¬²¢·µ»Ø¸üĞÂºóµÄÁĞ±í¡£
-
-> Ref: TRUE ÖµµÄÄ¬ÈÏ×Ö·û´®
-> Ref: FALSE ÖµµÄÄ¬ÈÏ×Ö·û´®
-
--- <b>ÊäÈë¿Ø¼ş (Controls)</b> --
-- <b>Custom False Boolean Strings</b>: ×Ô¶¨Òå FALSE ×Ö·û´®ÁĞ±í
-- <b>Custom True Boolean Strings</b>: ×Ô¶¨Òå TRUE ×Ö·û´®ÁĞ±í
-
--- <b>Êä³ö¿Ø¼ş (Indicators)</b> --
-- <b>False Boolean Strings</b>: ¸üĞÂºóµÄ FALSE ×Ö·û´®ÁĞ±í
-- <b>True Boolean Strings</b>: ¸üĞÂºóµÄ TRUE ×Ö·û´®ÁĞ±í
-
-### API String - Remove Boolean Strings.vi
-
-´Ó API String ²¼¶ûÖµ½âÎöÁĞ±íÖĞÒÆ³ı×Ô¶¨Òå²¼¶û×Ö·û´®£¬²¢·µ»Ø¸üĞÂºóµÄÁĞ±í¡£
-
-> Ref: TRUE ÖµµÄÄ¬ÈÏ×Ö·û´®
-> Ref: FALSE ÖµµÄÄ¬ÈÏ×Ö·û´®
-
--- <b>ÊäÈë¿Ø¼ş (Controls)</b> --
-- <b>Custom False Boolean Strings</b>: ÒªÒÆ³ıµÄ FALSE ×Ö·û´®ÁĞ±í
-- <b>Custom True Boolean Strings</b>: ÒªÒÆ³ıµÄ TRUE ×Ö·û´®ÁĞ±í
-
--- <b>Êä³ö¿Ø¼ş (Indicators)</b> --
-- <b>False Boolean Strings</b>: ¸üĞÂºóµÄ FALSE ×Ö·û´®ÁĞ±í
-- <b>True Boolean Strings</b>: ¸üĞÂºóµÄ TRUE ×Ö·û´®ÁĞ±í
-
-### API String - List Boolean Strings.vi
-
-ÁĞ³öµ±Ç°ËùÓĞ¿ÉÓÃµÄ²¼¶ûÖµ×Ö·û´®
-
-> Ref: TRUE ÖµµÄÄ¬ÈÏ×Ö·û´®
-> Ref: FALSE ÖµµÄÄ¬ÈÏ×Ö·û´®
-
--- <b>Êä³ö¿Ø¼ş (Indicators)</b> --
-- <b>False Boolean Strings</b>: µ±Ç°µÄ FALSE ×Ö·û´®ÁĞ±í
-- <b>True Boolean Strings</b>: µ±Ç°µÄ TRUE ×Ö·û´®ÁĞ±í
-
-### API String - Set Float Format String.vi
-
-ÉèÖÃ¸¡µãÊıµÄ¸ñÊ½×Ö·û´®£¬¿É²Î¿¼ LabVIEW format string ¸ñÊ½¡£
-
-> Ref: ¸¡µãÊıÄ¬ÈÏ¸ñÊ½
-
--- <b>ÊäÈë¿Ø¼ş (Controls)</b> --
-- <b>Float Format String Setting</b>: ¸¡µãÊı¸ñÊ½×Ö·û´®ÉèÖÃ
-
--- <b>Êä³ö¿Ø¼ş (Indicators)</b> --
-- <b>Float Format String</b>: µ±Ç°µÄ¸¡µãÊı¸ñÊ½×Ö·û´®
-
-### API String - Float Format String.vi
-
-»ñÈ¡µ±Ç°µÄ¸¡µãÊı¸ñÊ½×Ö·û´®
-
-> Ref: ¸¡µãÊıÄ¬ÈÏ¸ñÊ½
-
--- <b>Êä³ö¿Ø¼ş (Indicators)</b> --
-- <b>Float Format String</b>: µ±Ç°µÄ¸¡µãÊı¸ñÊ½×Ö·û´®
-
-### API String - Set Float Precision.vi
-
-ÉèÖÃ¸¡µãÊıµÄ¾«¶È
-
-    ×¢Òâ£º
-    - Ä¬ÈÏ¾«¶ÈÎª 6 Î»ÓĞĞ§Êı×Ö£¬¸ñÊ½Îª "%.6p"
-    - ´Ë VI ÊÇ API String - Set Float Format String.vi µÄ¼ò»¯°æ±¾£¬½öÓÃÓÚÉèÖÃÓĞĞ§Êı×ÖÎ»Êı
-
-> Ref: ¸¡µãÊıÄ¬ÈÏ¸ñÊ½
-
--- <b>ÊäÈë¿Ø¼ş (Controls)</b> --
-- <b>Precision</b>: ¸¡µãÊı¾«¶ÈÉèÖÃ
-
--- <b>Êä³ö¿Ø¼ş (Indicators)</b> --
-- <b>Float Format String</b>: ¸üĞÂºóµÄ¸¡µãÊı¸ñÊ½×Ö·û´®
-
-## ×Ö·û´®×ª»»
-
-### String to Boolean_csm.vi
-
-½«×Ö·û´®×ª»»Îª²¼¶ûÖµ¡£Ö§³Ö¶àÖÖ TRUE/FALSE ±íÊ¾·½Ê½£¬¿ÉÍ¨¹ı API String - Add Boolean Strings.vi Ìí¼Ó×Ô¶¨ÒåµÄ TRUE/FALSE ×Ö·û´®
-
-> Ref: TRUE ÖµµÄÄ¬ÈÏ×Ö·û´®
-> Ref: FALSE ÖµµÄÄ¬ÈÏ×Ö·û´®
-
--- <b>ÊäÈë¿Ø¼ş (Controls)</b> --
-- <b>String</b>: ÊäÈë×Ö·û´®
-- <b>Default (F)</b>: ×ª»»Ê§°ÜÊ±µÄÄ¬ÈÏÖµ
-
--- <b>Êä³ö¿Ø¼ş (Indicators)</b> --
-- <b>Boolean</b>: ×ª»»ºóµÄ²¼¶ûÖµ
-
-### String To Float_csm.vi
-
-½«×Ö·û´®×ª»»Îª¸¡µãÊı¡£Ö§³Ö¶àÖÖ¸¡µãÊı¸ñÊ½ºÍµ¥Î»£¬¿ÉÍ¨¹ı API String - Set Float Format String.vi ÉèÖÃ¸ñÊ½
+> æ›´å¤šè¯¦ç»†ä¿¡æ¯è¯·è®¿é—®: https://github.com/NEVSTOP-LAB/CSM-API-String-Arguments-Support
+>
+> æˆ–å‚è€ƒèŒƒä¾‹ï¼Œæ‰€æœ‰æ•°æ®ç±»å‹å‡æœ‰è¯¦ç»†è¯´æ˜å’Œç¤ºä¾‹ã€‚
 
 > [!NOTE]
-> ¿Õ×Ö·û´®½«×ª»»ÎªÄ¬ÈÏÊı¾İ¡£
-> ´øÓĞµ¥Î»µÄ¸¡µãÊı×Ö·û´®Ò²Ö§³ÖÕıÈ·½âÎö¡£
-> `e`¡¢`-e`¡¢`pi`¡¢`-pi`¡¢`inf`¡¢`+inf`¡¢`-inf` ºÍ `NaN` µÈÌØÊâ¸¡µãÊıÖµ²»Ö§³Öµ¥Î»¡£
+> <b>TRUEå€¼çš„é»˜è®¤å­—ç¬¦ä¸²</b>
+>
+> æ”¯æŒ`1`, `Active`, `Enable`, `Non-null`, `On`, `T`, `True`, `valid`, `yes`
+> ä¸åŒºåˆ†å¤§å°å†™
 
-> Ref: ¸¡µãÊıÄ¬ÈÏ¸ñÊ½
+> [!NOTE]
+> <b>FALSEå€¼çš„é»˜è®¤å­—ç¬¦ä¸²</b>
+>
+> æ”¯æŒ`0`, `Disable`, `F`, `False`, `Inactive`, `Invalid`, `No`, `Off`, `Void`, `null`
+> ä¸åŒºåˆ†å¤§å°å†™
 
--- <b>ÊäÈë¿Ø¼ş (Controls)</b> --
-- <b>String</b>: ÊäÈë×Ö·û´®
-- <b>Default (0)</b>: ×ª»»Ê§°ÜÊ±µÄÄ¬ÈÏÖµ
+> [!NOTE]
+> <b>æµ®ç‚¹æ•°é»˜è®¤æ ¼å¼</b>
+>
+> æµ®ç‚¹æ•°é»˜è®¤æ ¼å¼ä¸º`%.6p`ã€‚
 
--- <b>Êä³ö¿Ø¼ş (Indicators)</b> --
-- <b>Float</b>: ×ª»»ºóµÄ¸¡µãÊı
-- <b>Unit String</b>: ÌáÈ¡µÄµ¥Î»×Ö·û´®
+> [!NOTE]
+> <b>å¸¦ç´¢å¼•çš„æšä¸¾ç±»å‹(Indexed Enum)</b>
+>
+> æ ¼å¼ä¸º`[ç´¢å¼•ç¼–å·(index)][åˆ†éš”ç¬¦(separator)][æšä¸¾å­—ç¬¦ä¸²]`ï¼Œç´¢å¼•ç¼–å·æ”¯æŒå¤šç§æ•°å€¼è¡¨ç¤ºæ–¹å¼
+>
+> ç´¢å¼•ç¼–å·ä½¿ç”¨`==`åˆ†éš”ç¬¦ç¤ºä¾‹:
+> `1 == boolean | 2 == string | 4 == dbl | 8 == number`
+>
+> ç´¢å¼•ç¼–å·ä½¿ç”¨`--`åˆ†éš”ç¬¦ç¤ºä¾‹:
+> `0x01 -- boolean | 0x02 -- string | 0x04 -- dbl | 0x08 -- number`
+>
+> ç´¢å¼•ç¼–å·ä½¿ç”¨`__`åˆ†éš”ç¬¦ç¤ºä¾‹:
+> `0b0001 __ boolean | 0b0100 __ dbl | 0b1000 __ number`
+
+## API String æ ¸å¿ƒåŠŸèƒ½
+
+### API String - Is Supported Datatype.vi
+åˆ¤æ–­æ•°æ®ç±»å‹æ˜¯å¦ä¸ºAPI Stringæ”¯æŒçš„è½¬æ¢æ•°æ®ç±»å‹ã€‚
+
+> - Ref: API Stringå‚æ•°æ”¯æŒ
+> - Ref: CSM HEXSTRæ ¼å¼
+
+-- <b>è¾“å…¥æ§ä»¶(Controls)</b> --
+- <b>Data</b>: è¾“å…¥æ•°æ®ã€‚
+
+-- <b>è¾“å‡ºæ§ä»¶(Indicators)</b> --
+- <b>Data(Dup)</b>: è¾“å…¥æ•°æ®å‰¯æœ¬ã€‚
+- <b>Supported Datatype?</b>: æ˜¯å¦æ”¯æŒAPI Stringçš„å¸ƒå°”å€¼ã€‚
+
+### Convert Data To API String Arguments.vim
+å°†æ•°æ®è½¬æ¢ä¸ºAPI Stringæ ¼å¼ã€‚
+
+> - Ref: API Stringå‚æ•°æ”¯æŒ
+
+-- <b>è¾“å…¥æ§ä»¶(Controls)</b> --
+- <b>Data</b>: è¾“å…¥æ•°æ®ã€‚
+- <b>Reference Cluster Data</b>: å‚è€ƒç°‡æ•°æ®ï¼Œè½¬æ¢ç°‡æ•°æ®æ—¶ï¼Œä¼šæ¯”è¾ƒè¾“å…¥æ•°æ®å’Œå‚è€ƒæ•°æ®ä¸­çš„å…ƒç´ ï¼Œè‹¥å®Œå…¨åŒ¹é…ï¼Œåˆ™è½¬æ¢ç»“æœå°†å¿½ç•¥è¯¥å…ƒç´ ã€‚
+- <b>No Tag Mode? (F)</b>: å¯¹äºç°‡æ•°æ®ï¼Œå½“ä¸ºTRUEæ—¶ï¼Œè½¬æ¢ä¸ºAPI Stringæ—¶ä¸åŒ…å«æ ‡ç­¾ä¿¡æ¯ã€‚
+
+-- <b>è¾“å‡ºæ§ä»¶(Indicators)</b> --
+- <b>API String</b>: è½¬æ¢åçš„API Stringæ ¼å¼ã€‚
+
+### Convert API String Arguments to Data.vim
+å°†API Stringè½¬æ¢ä¸ºç›¸åº”çš„æ•°æ®ç±»å‹ã€‚
+
+> - Ref: API Stringå‚æ•°æ”¯æŒ
+
+-- <b>è¾“å…¥æ§ä»¶(Controls)</b> --
+- <b>API String</b>: API Stringæ ¼å¼çš„è¾“å…¥å­—ç¬¦ä¸²ã€‚
+- <b>Strict Label Check? (T)</b>: ä¸¥æ ¼æ ‡ç­¾æ£€æŸ¥ï¼Œå½“ä¸ºTRUEæ—¶ï¼Œè‹¥å‚è€ƒæ•°æ®ä¸­ä¸åŒ…å«æ ‡ç­¾ï¼Œè½¬æ¢å°†å¤±è´¥æŠ¥é”™ã€‚
+- <b>Reference Type</b>: å‚è€ƒæ•°æ®ã€‚
+
+-- <b>è¾“å‡ºæ§ä»¶(Indicators)</b> --
+- <b>Data</b>: è½¬æ¢åçš„æ•°æ®ã€‚
+
+### Query Data as API String Arguments.vim
+æŸ¥è¯¢ç°‡æ•°æ®ä¸­çš„æŒ‡å®šæ•°æ®é¡¹ï¼Œå¹¶è½¬æ¢ä¸ºAPI Stringæ ¼å¼ã€‚
+
+<b>åº”ç”¨åœºæ™¯</b>: ä¾‹å¦‚åœ¨API String AddonåŒ…å«çš„æ–°CSMæ¨¡å—æ¨¡æ¿ä¸­ï¼Œæ–°å¢äº†`Data: Get Configuration`çŠ¶æ€ï¼Œåœ¨æ­¤çŠ¶æ€ä¸‹ï¼Œé€šè¿‡å‘é€å¸Œæœ›æŸ¥è¯¢çš„æ•°æ®é¡¹åç§°ï¼Œå³å¯è¿”å›å¯¹åº”çš„æ•°æ®é¡¹å€¼ã€‚
+
+ç‰¹æ®Šæƒ…å†µ: è‹¥å°†<b>Name</b>è®¾ç½®ä¸º`<list>`ï¼Œå°†è¿”å›æ‰€æœ‰å¯ç”¨è®¾ç½®çš„åˆ—è¡¨ã€‚
+
+-- <b>è¾“å…¥æ§ä»¶(Controls)</b> --
+- <b>Cluster Data</b>: ç°‡æ•°æ®ã€‚
+- <b>Name</b>: æ•°æ®åç§°ã€‚
+
+-- <b>è¾“å‡ºæ§ä»¶(Indicators)</b> --
+- <b>Cluster Data(dup)</b>: ç°‡æ•°æ®å‰¯æœ¬ã€‚
+- <b>API String</b>: API Stringæ ¼å¼çš„æŸ¥è¯¢ç»“æœã€‚
+
+## é…ç½®
+
+### API String - Add Boolean Strings.vi
+å°†è‡ªå®šä¹‰å¸ƒå°”å­—ç¬¦ä¸²æ·»åŠ åˆ°API Stringå¸ƒå°”å€¼è§£æåˆ—è¡¨ä¸­ï¼Œå¹¶è¿”å›æ›´æ–°åçš„åˆ—è¡¨ã€‚
+
+> - Ref: TRUEå€¼çš„é»˜è®¤å­—ç¬¦ä¸²
+> - Ref: FALSEå€¼çš„é»˜è®¤å­—ç¬¦ä¸²
+
+-- <b>è¾“å…¥æ§ä»¶(Controls)</b> --
+- <b>Custom False Boolean Strings</b>: è‡ªå®šä¹‰FALSEå­—ç¬¦ä¸²åˆ—è¡¨ã€‚
+- <b>Custom True Boolean Strings</b>: è‡ªå®šä¹‰TRUEå­—ç¬¦ä¸²åˆ—è¡¨ã€‚
+
+-- <b>è¾“å‡ºæ§ä»¶(Indicators)</b> --
+- <b>False Boolean Strings</b>: æ›´æ–°åçš„FALSEå­—ç¬¦ä¸²åˆ—è¡¨ã€‚
+- <b>True Boolean Strings</b>: æ›´æ–°åçš„TRUEå­—ç¬¦ä¸²åˆ—è¡¨ã€‚
+
+### API String - Remove Boolean Strings.vi
+ä»API Stringå¸ƒå°”å€¼è§£æåˆ—è¡¨ä¸­ç§»é™¤è‡ªå®šä¹‰å¸ƒå°”å­—ç¬¦ä¸²ï¼Œå¹¶è¿”å›æ›´æ–°åçš„åˆ—è¡¨ã€‚
+
+> - Ref: TRUEå€¼çš„é»˜è®¤å­—ç¬¦ä¸²
+> - Ref: FALSEå€¼çš„é»˜è®¤å­—ç¬¦ä¸²
+
+-- <b>è¾“å…¥æ§ä»¶(Controls)</b> --
+- <b>Custom False Boolean Strings</b>: è¦ç§»é™¤çš„FALSEå­—ç¬¦ä¸²åˆ—è¡¨ã€‚
+- <b>Custom True Boolean Strings</b>: è¦ç§»é™¤çš„TRUEå­—ç¬¦ä¸²åˆ—è¡¨ã€‚
+
+-- <b>è¾“å‡ºæ§ä»¶(Indicators)</b> --
+- <b>False Boolean Strings</b>: æ›´æ–°åçš„FALSEå­—ç¬¦ä¸²åˆ—è¡¨ã€‚
+- <b>True Boolean Strings</b>: æ›´æ–°åçš„TRUEå­—ç¬¦ä¸²åˆ—è¡¨ã€‚
+
+### API String - List Boolean Strings.vi
+åˆ—å‡ºå½“å‰æ‰€æœ‰å¯ç”¨çš„å¸ƒå°”å€¼å­—ç¬¦ä¸²ã€‚
+
+> - Ref: TRUEå€¼çš„é»˜è®¤å­—ç¬¦ä¸²
+> - Ref: FALSEå€¼çš„é»˜è®¤å­—ç¬¦ä¸²
+
+-- <b>è¾“å‡ºæ§ä»¶(Indicators)</b> --
+- <b>False Boolean Strings</b>: å½“å‰çš„FALSEå­—ç¬¦ä¸²åˆ—è¡¨ã€‚
+- <b>True Boolean Strings</b>: å½“å‰çš„TRUEå­—ç¬¦ä¸²åˆ—è¡¨ã€‚
+
+### API String - Set Float Format String.vi
+è®¾ç½®æµ®ç‚¹æ•°çš„æ ¼å¼å­—ç¬¦ä¸²ï¼Œå¯å‚è€ƒLabVIEW format stringæ ¼å¼ã€‚
+
+> - Ref: æµ®ç‚¹æ•°é»˜è®¤æ ¼å¼
+
+-- <b>è¾“å…¥æ§ä»¶(Controls)</b> --
+- <b>Float Format String Setting</b>: æµ®ç‚¹æ•°æ ¼å¼å­—ç¬¦ä¸²è®¾ç½®ã€‚
+
+-- <b>è¾“å‡ºæ§ä»¶(Indicators)</b> --
+- <b>Float Format String</b>: å½“å‰çš„æµ®ç‚¹æ•°æ ¼å¼å­—ç¬¦ä¸²ã€‚
+
+### API String - Float Format String.vi
+è·å–å½“å‰çš„æµ®ç‚¹æ•°æ ¼å¼å­—ç¬¦ä¸²ã€‚
+
+> - Ref: æµ®ç‚¹æ•°é»˜è®¤æ ¼å¼
+
+-- <b>è¾“å‡ºæ§ä»¶(Indicators)</b> --
+- <b>Float Format String</b>: å½“å‰çš„æµ®ç‚¹æ•°æ ¼å¼å­—ç¬¦ä¸²ã€‚
+
+### API String - Set Float Precision.vi
+è®¾ç½®æµ®ç‚¹æ•°çš„ç²¾åº¦ã€‚
+
+> [!NOTE]
+> - é»˜è®¤ç²¾åº¦ä¸º6ä½æœ‰æ•ˆæ•°å­—ï¼Œæ ¼å¼ä¸º`%.6p`ã€‚
+> - æ­¤VIæ˜¯API String - Set Float Format String VIçš„ç®€åŒ–ç‰ˆæœ¬ï¼Œä»…ç”¨äºè®¾ç½®æœ‰æ•ˆæ•°å­—ä½æ•°ã€‚
+
+> - Ref: æµ®ç‚¹æ•°é»˜è®¤æ ¼å¼
+
+-- <b>è¾“å…¥æ§ä»¶(Controls)</b> --
+- <b>Precision</b>: æµ®ç‚¹æ•°ç²¾åº¦è®¾ç½®ã€‚
+
+-- <b>è¾“å‡ºæ§ä»¶(Indicators)</b> --
+- <b>Float Format String</b>: æ›´æ–°åçš„æµ®ç‚¹æ•°æ ¼å¼å­—ç¬¦ä¸²ã€‚
+
+## å­—ç¬¦ä¸²è½¬æ¢
+
+### String to Boolean_csm.vi
+å°†å­—ç¬¦ä¸²è½¬æ¢ä¸ºå¸ƒå°”å€¼ã€‚æ”¯æŒå¤šç§TRUE/FALSEè¡¨ç¤ºæ–¹å¼ï¼Œå¯é€šè¿‡API String - Add Boolean Strings VIæ·»åŠ è‡ªå®šä¹‰çš„TRUE/FALSEå­—ç¬¦ä¸²ã€‚
+
+> - Ref: TRUEå€¼çš„é»˜è®¤å­—ç¬¦ä¸²
+> - Ref: FALSEå€¼çš„é»˜è®¤å­—ç¬¦ä¸²
+
+-- <b>è¾“å…¥æ§ä»¶(Controls)</b> --
+- <b>String</b>: è¾“å…¥å­—ç¬¦ä¸²ã€‚
+- <b>Default (F)</b>: è½¬æ¢å¤±è´¥æ—¶çš„é»˜è®¤å€¼ã€‚
+
+-- <b>è¾“å‡ºæ§ä»¶(Indicators)</b> --
+- <b>Boolean</b>: è½¬æ¢åçš„å¸ƒå°”å€¼ã€‚
+
+### String To Float_csm.vi
+å°†å­—ç¬¦ä¸²è½¬æ¢ä¸ºæµ®ç‚¹æ•°ã€‚æ”¯æŒå¤šç§æµ®ç‚¹æ•°æ ¼å¼å’Œå•ä½ï¼Œå¯é€šè¿‡API String - Set Float Format String VIè®¾ç½®æ ¼å¼ã€‚
+
+> [!NOTE]
+> ç©ºå­—ç¬¦ä¸²å°†è½¬æ¢ä¸ºé»˜è®¤æ•°æ®ã€‚
+> å¸¦æœ‰å•ä½çš„æµ®ç‚¹æ•°å­—ç¬¦ä¸²ä¹Ÿæ”¯æŒæ­£ç¡®è§£æã€‚
+> `e`ã€`-e`ã€`pi`ã€`-pi`ã€`inf`ã€`+inf`ã€`-inf`å’Œ`NaN`ç­‰ç‰¹æ®Šæµ®ç‚¹æ•°å€¼ä¸æ”¯æŒå•ä½ã€‚
+
+> - Ref: æµ®ç‚¹æ•°é»˜è®¤æ ¼å¼
+
+-- <b>è¾“å…¥æ§ä»¶(Controls)</b> --
+- <b>String</b>: è¾“å…¥å­—ç¬¦ä¸²ã€‚
+- <b>Default (0)</b>: è½¬æ¢å¤±è´¥æ—¶çš„é»˜è®¤å€¼ã€‚
+
+-- <b>è¾“å‡ºæ§ä»¶(Indicators)</b> --
+- <b>Float</b>: è½¬æ¢åçš„æµ®ç‚¹æ•°ã€‚
+- <b>Unit String</b>: æå–çš„å•ä½å­—ç¬¦ä¸²ã€‚
 
 ### String To Number(I64)_csm.vi
+å°†å­—ç¬¦ä¸²è½¬æ¢ä¸º64ä½æ•´æ•°ã€‚æ”¯æŒå¤šç§æ•°å­—æ ¼å¼ï¼ŒåŒ…æ‹¬æ™®é€šæ•´æ•°ã€åè¿›åˆ¶ã€åå…­è¿›åˆ¶ã€äºŒè¿›åˆ¶ã€å…«è¿›åˆ¶ï¼Œä»¥åŠå¸¦åç¼€çš„è¡¨ç¤ºæ–¹æ³•ï¼Œè½¬æ¢å¤±è´¥æ—¶è¿”å›0ã€‚
 
-½«×Ö·û´®×ª»»Îª 64 Î»ÕûÊı¡£Ö§³Ö¶àÖÖÊı×Ö¸ñÊ½£¬°üÀ¨ÆÕÍ¨ÕûÊı¡¢Ê®½øÖÆ¡¢Ê®Áù½øÖÆ¡¢¶ş½øÖÆ¡¢°Ë½øÖÆ£¬ÒÔ¼°´øºó×ºµÄ±íÊ¾·½·¨£¬×ª»»Ê§°ÜÊ±·µ»Ø 0
+-- <b>è¾“å…¥æ§ä»¶(Controls)</b> --
+- <b>String</b>: è¾“å…¥å­—ç¬¦ä¸²ã€‚
 
--- <b>ÊäÈë¿Ø¼ş (Controls)</b> --
-- <b>String</b>: ÊäÈë×Ö·û´®
-
--- <b>Êä³ö¿Ø¼ş (Indicators)</b> --
-- <b>Numeric</b>: ×ª»»ºóµÄ 64 Î»ÕûÊı
+-- <b>è¾“å‡ºæ§ä»¶(Indicators)</b> --
+- <b>Numeric</b>: è½¬æ¢åçš„64ä½æ•´æ•°ã€‚
 
 ### String To Indexed Enum_csm.vi
+å°†å­—ç¬¦ä¸²è½¬æ¢ä¸ºå¸¦ç´¢å¼•çš„æšä¸¾ç±»å‹ã€‚
 
-½«×Ö·û´®×ª»»Îª´øË÷ÒıµÄÃ¶¾ÙÀàĞÍ
+> - Ref: å¸¦ç´¢å¼•çš„æšä¸¾ç±»å‹(Indexed Enum)
 
-> Ref: ´øË÷ÒıµÄÃ¶¾ÙÀàĞÍ (Indexed Enum)
+    _<b>è½¬æ¢è§„åˆ™1: æ— ç´¢å¼•ç¼–å·</b>_
 
-    _**×ª»»¹æÔò 1: ÎŞË÷Òı±àºÅ**_
+    é€šè¿‡å­—ç¬¦ä¸²åŒ¹é…è¿›è¡Œè½¬æ¢
 
-    Í¨¹ı×Ö·û´®Æ¥Åä½øĞĞ×ª»»
+    ä¾‹å¦‚Enum = {AAA, BBBB, CCCC}
+    - å­—ç¬¦ä¸²"AAA"å°†è½¬æ¢ä¸ºEnum(AAA)ï¼Œæ•°å­—å€¼ä¸º0
+    - å­—ç¬¦ä¸²"CCC"å°†è½¬æ¢ä¸ºEnum(CCC)ï¼Œæ•°å­—å€¼ä¸º2
 
-    ÀıÈç Enum = {AAA, BBBB, CCCC}
+    _<b>è½¬æ¢è§„åˆ™2: æœ‰ç´¢å¼•ç¼–å·</b>_
 
-    - ×Ö·û´® "AAA" ½«×ª»»Îª Enum(AAA)£¬Êı×ÖÖµÎª 0
-    - ×Ö·û´® "CCC" ½«×ª»»Îª Enum(CCC)£¬Êı×ÖÖµÎª 2
+    æ—¢å¯ä»¥é€šè¿‡å­—ç¬¦ä¸²åŒ¹é…è½¬æ¢ï¼Œä¹Ÿå¯ä»¥é€šè¿‡ç´¢å¼•ç¼–å·åŒ¹é…è½¬æ¢
 
-    _**×ª»»¹æÔò 2: ÓĞË÷Òı±àºÅ**_
+    ä¾‹å¦‚Enum = {1- AAA, 5 - BBBB, 9 - CCCC}
+    - å­—ç¬¦ä¸²"AAA"å°†è½¬æ¢ä¸ºEnum(1- AAA)ï¼Œæ•°å­—å€¼ä¸º0
+    - å­—ç¬¦ä¸²"5"å°†è½¬æ¢ä¸ºEnum(5 - BBBB)ï¼Œæ•°å­—å€¼ä¸º1
+    - å­—ç¬¦ä¸²"9 - CCCC"å°†è½¬æ¢ä¸ºEnum(9 - CCCC)ï¼Œæ•°å­—å€¼ä¸º2
 
-    ¼È¿ÉÒÔÍ¨¹ı×Ö·û´®Æ¥Åä×ª»»£¬Ò²¿ÉÒÔÍ¨¹ıË÷Òı±àºÅÆ¥Åä×ª»»
+-- <b>è¾“å…¥æ§ä»¶(Controls)</b> --
+- <b>String</b>: è¾“å…¥å­—ç¬¦ä¸²ã€‚
+- <b>Enum Prototype</b>: æšä¸¾åŸå‹ã€‚
 
-    ÀıÈç Enum = {1- AAA, 5 - BBBB, 9 - CCCC}
-
-    - ×Ö·û´® "AAA" ½«×ª»»Îª Enum(1- AAA)£¬Êı×ÖÖµÎª 0
-    - ×Ö·û´® "5" ½«×ª»»Îª Enum(5 - BBBB)£¬Êı×ÖÖµÎª 1
-    - ×Ö·û´® "9 - CCCC" ½«×ª»»Îª Enum(9 - CCCC)£¬Êı×ÖÖµÎª 2
-
--- <b>ÊäÈë¿Ø¼ş (Controls)</b> --
-- <b>String</b>: ÊäÈë×Ö·û´®
-- <b>Enum Prototype</b>: Ã¶¾ÙÔ­ĞÍ
-
--- <b>Êä³ö¿Ø¼ş (Indicators)</b> --
-- <b>Enum</b>: ×ª»»ºóµÄÃ¶¾ÙÖµ
+-- <b>è¾“å‡ºæ§ä»¶(Indicators)</b> --
+- <b>Enum</b>: è½¬æ¢åçš„æšä¸¾å€¼ã€‚
 
 ### Indexed Enum to Numeric_csm.vim
+å°†æšä¸¾è½¬æ¢ä¸ºæ•°å€¼ï¼Œæ”¯æŒå¸¦ç´¢å¼•çš„æšä¸¾ç±»å‹ï¼Œå½“æšä¸¾æ•°å€¼æºå¸¦ç´¢å¼•ç¼–å·æ—¶ï¼Œå°†ç›´æ¥ä½¿ç”¨ç´¢å¼•ç¼–å·ä½œä¸ºæ•°å€¼ã€‚
 
-½«Ã¶¾Ù×ª»»ÎªÊıÖµ£¬Ö§³Ö´øË÷ÒıµÄÃ¶¾ÙÀàĞÍ£¬µ±Ã¶¾ÙÊıÖµĞ¯´øË÷Òı±àºÅÊ±£¬½«Ö±½ÓÊ¹ÓÃË÷Òı±àºÅ×÷ÎªÊıÖµ
+> - Ref: å¸¦ç´¢å¼•çš„æšä¸¾ç±»å‹(Indexed Enum)
 
-> Ref: ´øË÷ÒıµÄÃ¶¾ÙÀàĞÍ (Indexed Enum)
+-- <b>è¾“å…¥æ§ä»¶(Controls)</b> --
+- <b>Enum</b>: è¾“å…¥æšä¸¾å€¼ã€‚
 
--- <b>ÊäÈë¿Ø¼ş (Controls)</b> --
-- <b>Enum</b>: ÊäÈëÃ¶¾ÙÖµ
-
--- <b>Êä³ö¿Ø¼ş (Indicators)</b> --
-- <b>Numeric</b>: Ã¶¾ÙµÄÊı×ÖÖµ
-- <b>String</b>: Ã¶¾ÙµÄ×Ö·û´®±íÊ¾
+-- <b>è¾“å‡ºæ§ä»¶(Indicators)</b> --
+- <b>Numeric</b>: æšä¸¾çš„æ•°å­—å€¼ã€‚
+- <b>String</b>: æšä¸¾çš„å­—ç¬¦ä¸²è¡¨ç¤ºã€‚
 
 ### Numeric to Indexed Enum_csm.vim
+å°†æ•°å­—å€¼è½¬æ¢ä¸ºå¸¦ç´¢å¼•çš„æšä¸¾ã€‚
 
-½«Êı×ÖÖµ×ª»»Îª´øË÷ÒıµÄÃ¶¾Ù
+è§„åˆ™1: å½“åŒ¹é…åˆ°ç´¢å¼•ç¼–å·æ—¶ï¼Œå°†ç›´æ¥ä½¿ç”¨è¯¥ç´¢å¼•ã€‚
 
-¹æÔò 1: µ±Æ¥Åäµ½Ë÷Òı±àºÅÊ±£¬½«Ö±½ÓÊ¹ÓÃ¸ÃË÷Òı
-¹æÔò 2: µ±Ã»ÓĞÆ¥Åäµ½Ë÷Òı±àºÅÊ±£¬½«Ê¹ÓÃÊı×ÖÖµ×÷ÎªÃ¶¾ÙË÷Òı
+è§„åˆ™2: å½“æ²¡æœ‰åŒ¹é…åˆ°ç´¢å¼•ç¼–å·æ—¶ï¼Œå°†ä½¿ç”¨æ•°å­—å€¼ä½œä¸ºæšä¸¾ç´¢å¼•ã€‚
 
-> Ref: ´øË÷ÒıµÄÃ¶¾ÙÀàĞÍ (Indexed Enum)
+> - Ref: å¸¦ç´¢å¼•çš„æšä¸¾ç±»å‹(Indexed Enum)
 
--- <b>ÊäÈë¿Ø¼ş (Controls)</b> --
-- <b>Numeric</b>: ÊäÈëÊı×ÖÖµ
-- <b>Enum Prototype</b>: Ã¶¾ÙÔ­ĞÍ
+-- <b>è¾“å…¥æ§ä»¶(Controls)</b> --
+- <b>Numeric</b>: è¾“å…¥æ•°å­—å€¼ã€‚
+- <b>Enum Prototype</b>: æšä¸¾åŸå‹ã€‚
 
--- <b>Êä³ö¿Ø¼ş (Indicators)</b> --
-- <b>Enum</b>: ×ª»»ºóµÄÃ¶¾ÙÖµ
+-- <b>è¾“å‡ºæ§ä»¶(Indicators)</b> --
+- <b>Enum</b>: è½¬æ¢åçš„æšä¸¾å€¼ã€‚
 
 ### CSM - Timestamp to API String Arguments.vi
+å°†LabVIEWæ—¶é—´æˆ³è½¬æ¢ä¸ºAPI Stringå­—ç¬¦ä¸²ã€‚
 
-½« LabVIEW Ê±¼ä´Á×ª»»Îª API String ×Ö·û´®¡£
+-- <b>è¾“å…¥æ§ä»¶(Controls)</b> --
+- <b>Timestamp (now)</b>: è¾“å…¥æ—¶é—´æˆ³ï¼Œé»˜è®¤ä¸ºå½“å‰æ—¶é—´ã€‚
+- <b>Format(Empty to use UTC)</b>: æ—¶é—´æ ¼å¼å­—ç¬¦ä¸²ï¼Œä¸ºç©ºæ—¶ä½¿ç”¨UTCæ ¼å¼ã€‚
 
--- <b>ÊäÈë¿Ø¼ş (Controls)</b> --
-- <b>Timestamp (now)</b>: ÊäÈëÊ±¼ä´Á£¬Ä¬ÈÏÎªµ±Ç°Ê±¼ä
-- <b>Format(Empty to use UTC)</b>: Ê±¼ä¸ñÊ½×Ö·û´®£¬Îª¿ÕÊ±Ê¹ÓÃ UTC ¸ñÊ½
+-- <b>è¾“å‡ºæ§ä»¶(Indicators)</b> --
+- <b>API String</b>: è½¬æ¢åçš„API Stringæ ¼å¼ã€‚
 
--- <b>Êä³ö¿Ø¼ş (Indicators)</b> --
-- <b>API String</b>: ×ª»»ºóµÄ API String ¸ñÊ½
-
-## ¹¤¾ßº¯Êı
+## å·¥å…·å‡½æ•°
 
 ### CSM - Convert HexStr to Data.vim
+æä¾›CSM - Convert HexStr to Data VIè‡ªé€‚åº”æ•°æ®ç±»å‹çš„ç‰ˆæœ¬ã€‚
 
-Ìá¹© CSM - Convert HexStr to Data.vi ×ÔÊÊÓ¦Êı¾İÀàĞÍµÄ°æ±¾
+-- <b>è¾“å…¥æ§ä»¶(Controls)</b> --
+- <b>HEX String</b>: HEXæ ¼å¼å­—ç¬¦ä¸²ã€‚
+- <b>Type</b>: æ•°æ®ç±»å‹ã€‚
 
--- <b>ÊäÈë¿Ø¼ş (Controls)</b> --
-- <b>HEX String</b>: HEX ¸ñÊ½×Ö·û´®
-- <b>Type</b>: Êı¾İÀàĞÍ
-
--- <b>Êä³ö¿Ø¼ş (Indicators)</b> --
-- <b>data</b>: ×ª»»ºóµÄÊı¾İ
+-- <b>è¾“å‡ºæ§ä»¶(Indicators)</b> --
+- <b>data</b>: è½¬æ¢åçš„æ•°æ®ã€‚
 
 ### CSM - Broadcast Data As API String.vim
+ä½¿ç”¨CSM - Generate User Global Log VIå°†æ•°æ®ä»¥API Stringæ ¼å¼å¹¿æ’­ã€‚
 
-Ê¹ÓÃ CSM - Generate User Global Log.vi ½«Êı¾İÒÔ API String ¸ñÊ½¹ã²¥
+-- <b>è¾“å…¥æ§ä»¶(Controls)</b> --
+- <b>Data</b>: è¦å¹¿æ’­çš„æ•°æ®ã€‚
+- <b>CSM</b>: CSMæ¨¡å—å¼•ç”¨ã€‚
+- <b>API/Condition</b>: APIæˆ–æ¡ä»¶å­—ç¬¦ä¸²ã€‚
 
--- <b>ÊäÈë¿Ø¼ş (Controls)</b> --
-- <b>Data</b>: Òª¹ã²¥µÄÊı¾İ
-- <b>CSM</b>: CSM Ä£¿éÒıÓÃ
-- <b>API/Condition</b>: API »òÌõ¼ş×Ö·û´®
-
--- <b>Êä³ö¿Ø¼ş (Indicators)</b> --
-- <b>Data (dup)</b>: Êı¾İ¸±±¾
+-- <b>è¾“å‡ºæ§ä»¶(Indicators)</b> --
+- <b>Data (dup)</b>: æ•°æ®å‰¯æœ¬ã€‚
 
 ### CSM - Query Internal Data Names By API String.vi
+æŸ¥è¯¢CSMæ¨¡å—çš„å†…éƒ¨æ•°æ®åç§°ã€‚å®ç°é€»è¾‘: ä½¿ç”¨åŒæ­¥æ¶ˆæ¯å‘é€`Data: Get Internal Data`å‘½ä»¤ï¼Œå‚æ•°ä¸º`<list>`ï¼Œè·å–CSMæ¨¡å—çš„å†…éƒ¨æ•°æ®åç§°åˆ—è¡¨ã€‚
 
-²éÑ¯ CSM Ä£¿éµÄÄÚ²¿Êı¾İÃû³Æ¡£ÊµÏÖÂß¼­£ºÊ¹ÓÃÍ¬²½ÏûÏ¢·¢ËÍ "Data: Get Internal Data" ÃüÁî£¬²ÎÊıÎª "<list>"£¬»ñÈ¡ CSM Ä£¿éµÄÄÚ²¿Êı¾İÃû³ÆÁĞ±í
+-- <b>è¾“å…¥æ§ä»¶(Controls)</b> --
+- <b>Target Module</b>: CSM ç›®æ ‡æ¨¡å—ã€‚
+- <b>Current Module ("" to Generate an ID)</b>: å½“å‰æ¨¡å—(ç©ºå­—ç¬¦ä¸²è¡¨ç¤ºç”ŸæˆID)ã€‚
+- <b>Wait (5000ms)</b>: ç­‰å¾…æ—¶é—´(æ¯«ç§’)ã€‚
 
--- <b>ÊäÈë¿Ø¼ş (Controls)</b> --
-- <b>Target Module</b>: CSM Ä¿±êÄ£¿é
-- <b>Current Module ("" to Generate an ID)</b>: µ±Ç°Ä£¿é£¨¿Õ×Ö·û´®±íÊ¾Éú³É ID£©
-- <b>Wait (5000ms)</b>: µÈ´ıÊ±¼ä£¨ºÁÃë£©
-
--- <b>Êä³ö¿Ø¼ş (Indicators)</b> --
-- <b>Configurations</b>: ÅäÖÃÁĞ±í
+-- <b>è¾“å‡ºæ§ä»¶(Indicators)</b> --
+- <b>Configurations</b>: é…ç½®åˆ—è¡¨ã€‚
