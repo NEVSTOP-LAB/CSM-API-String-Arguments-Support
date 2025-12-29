@@ -19,7 +19,6 @@
 > - Other types (represented using CSM-Hexstr)
 >
 > For more details, visit: https://github.com/NEVSTOP-LAB/CSM-API-String-Arguments-Support.
->
 > You can also refer to the examples. All data types have detailed descriptions and examples.
 
 > [!NOTE]
@@ -48,14 +47,14 @@
 >
 > The index number supports multiple numeric representations.
 >
-> Example of Index Number using `==` separator:
-> `1 == boolean | 2 == string | 4 == dbl | 8 == number`
+>     Example of Index Number using `==` separator:
+>     `1 == boolean | 2 == string | 4 == dbl | 8 == number`
 >
-> Example of Index Number using `--` separator:
-> `0x01 -- boolean | 0x02 -- string | 0x04 -- dbl | 0x08 -- number`
+>     Example of Index Number using `--` separator:
+>     `0x01 -- boolean | 0x02 -- string | 0x04 -- dbl | 0x08 -- number`
 >
-> Example of Index Number using `__` separator:
-> `0b0001 __ boolean | 0b0100 __ dbl | 0b1000 __ number`
+>     Example of Index Number using `__` separator:
+>     `0b0001 __ boolean | 0b0100 __ dbl | 0b1000 __ number`
 
 ## API String Core Functions
 
@@ -273,9 +272,8 @@ Converts an enum to a numeric value. Supports indexed enum types. When the enum 
 ### Numeric to Indexed Enum_csm.vim
 Converts a numeric value to an indexed enum.
 
-Rule 1: If an index number is matched, use that index directly.
-
-Rule 2: If no index number is matched, use the numeric value as the enum index.
+- Rule 1: If an index number is matched, use that index directly.
+- Rule 2: If no index number is matched, use the numeric value as the enum index.
 
 > - Ref: Indexed Enum
 

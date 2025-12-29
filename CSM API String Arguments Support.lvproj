@@ -43,8 +43,6 @@
 			<Item Name="testcase-Supported-Datatype.lvclass" Type="LVClass" URL="../testcases/testcase-Supported-Datatype/testcase-Supported-Datatype.lvclass"/>
 		</Item>
 		<Item Name="CSM API String Arguments Support.vipb" Type="Document" URL="../CSM API String Arguments Support.vipb"/>
-		<Item Name="README(CN).md" Type="Document" URL="../README(CN).md"/>
-		<Item Name="README.md" Type="Document" URL="../README.md"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Communicable State Machine.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/Communicable State Machine.lvlib"/>
