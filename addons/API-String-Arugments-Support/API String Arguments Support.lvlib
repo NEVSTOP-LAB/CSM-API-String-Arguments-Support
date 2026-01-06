@@ -34,6 +34,7 @@
 			<Item Name="Match Multiple Pattern_csm.vi" Type="VI" URL="../_Support/Match Multiple Pattern_csm.vi"/>
 			<Item Name="Concatenate Strings If not Empty_csm.vi" Type="VI" URL="../_Support/Concatenate Strings If not Empty_csm.vi"/>
 			<Item Name="Strip Tag in Tag Value Pair.vi" Type="VI" URL="../_Support/Strip Tag in Tag Value Pair.vi"/>
+			<Item Name="Reorder String Array Breadth-firstly.vi" Type="VI" URL="../_Support/Reorder String Array Breadth-firstly.vi"/>
 		</Item>
 		<Item Name="Data" Type="Folder">
 			<Item Name="SingleElementsArray To Data_csm.vi" Type="VI" URL="../_Support/SingleElementsArray To Data_csm.vi"/>

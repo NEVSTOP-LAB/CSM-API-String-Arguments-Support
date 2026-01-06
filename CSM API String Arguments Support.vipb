@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2026-01-06 11:25:07" Creator="yaoli" Comments="" ID="7b06187f899619e91a19f0980decfd12">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-08-12 17:59:50" Modified_Date="2026-01-06 14:27:18" Creator="yaoli" Comments="" ID="364b0482be4befe0feaff83d08f77cef">
   <Library_General_Settings>
     <Package_File_Name>NEVSTOP_lib_CSM_API_String_Arguments_Support</Package_File_Name>
     <Library_Version>2025.11.0.1</Library_Version>
@@ -53,6 +53,7 @@ More information for the supported datatype format, please visit: https://github
       <Packager>NEVSTOP</Packager>
       <URL>https://github.com/NEVSTOP-LAB/CSM-API-String-Arugments-Support</URL>
       <Release_Notes>[feature] #95 support lvlibp
+[update] #99 support leaf name searching in Query Data as API String Arguments.vim
 [fix] #98 Do not check (), to avoid bugs
 [fix] #100 for enum type, empty string should be converted to the reference enum value.
 [fix] #102 for cluster type, all elements will be used in no-tag mode in ¡°Data To API String Arguments.vi¡±
