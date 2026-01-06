@@ -55,6 +55,7 @@
 		<Item Name="String To Indexed Enum_csm.vi" Type="VI" URL="../_Support/String To Indexed Enum_csm.vi"/>
 		<Item Name="Indexed Enum to Numeric_csm.vim" Type="VI" URL="../_Support/Indexed Enum to Numeric_csm.vim"/>
 		<Item Name="Numeric to Indexed Enum_csm.vim" Type="VI" URL="../_Support/Numeric to Indexed Enum_csm.vim"/>
+		<Item Name="Search 1D String Array by Pattern.vi" Type="VI" URL="../_Support/Search 1D String Array by Pattern.vi"/>
 	</Item>
 	<Item Name="Configure" Type="Folder">
 		<Item Name="API String - Add Boolean Strings.vi" Type="VI" URL="../API String - Add Boolean Strings.vi"/>
