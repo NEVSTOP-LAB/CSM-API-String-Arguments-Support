@@ -45,7 +45,6 @@
   - True/False
   - On/Off
   - Enable/Disable
-  - Active/Inactive
   - valid/Invalid
   - 1/0
   - Open/Close
@@ -214,6 +213,12 @@ _**转换规则2：包含索引编号时**_
 - 字符串 "AAA" 将转换为 Enum(1- AAA)，数字值为 0
 - 字符串 "5" 将转换为 Enum(5 - BBBB)，数字值为 1
 - 字符串 "9 - CCCC" 将转换为 Enum(9 - CCCC)，数字值为 2
+
+> [!NOTE]
+> - String matching is case-insensitive.
+> - String matching performs regular expression matching starting from the first element in the enum list until the first match is found. Therefore, partial writing is supported.
+>     For example: 0x00 -- Spring | 0x01 -- Summer | 0x02 -- Autumn | 0x03 -- Winter
+>     The input string "aut" will match to "Autumn".
 
 ### 数组(Array)
 
