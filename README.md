@@ -7,9 +7,9 @@
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Downloads](https://img.shields.io/github/downloads/NEVSTOP-LAB/CSM-API-String-Arguments-Support/total)](https://github.com/NEVSTOP-LAB/CSM-API-String-Arguments-Support/releases)
 
-This library enhances the API parameters for the Communicable State Machine (CSM) framework by enabling the inclusion of various data types in plain text format.
+This library extends the [CSM](https://github.com/NEVSTOP-LAB/Communicable-State-Machine) (Communicable State Machine) framework's API parameters to support various data types in plain text format.
 
-The library also provides two additional templates that include "Data: Get Configuration", "Data: Set Configuration", and "Data: Get Internal Data" states. These templates serve as a starting point for building CSM modules with the ability to access data stored in the '>> internal data >>' shift register.
+It also includes two templates with built-in `Data: Get Configuration`, `Data: Set Configuration`, and `Data: Get Internal Data` states — a ready-to-use starting point for CSM modules that need to read and write data in the `>> internal data >>` shift register.
 
 ![example](.github/doc.png)
 
