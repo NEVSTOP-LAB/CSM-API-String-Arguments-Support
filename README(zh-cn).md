@@ -1,15 +1,15 @@
 # CSM-API-String-Arguments-Support
 
-[English](./README.md) | [中文](./README(CN).md)
+[English](./README.md) | [中文](./README(zh-cn).md)
 
 [![安装量](https://www.vipm.io/package/nevstop_lib_csm_api_string_arguments_support/badge.svg?metric=installs)](https://www.vipm.io/package/nevstop_lib_csm_api_string_arguments_support/)
 [![星级评分](https://www.vipm.io/package/nevstop_lib_csm_api_string_arguments_support/badge.svg?metric=stars)](https://www.vipm.io/package/nevstop_lib_csm_api_string_arguments_support/)
-[![许可证](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![许可证](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![GitHub下载量](https://img.shields.io/github/downloads/NEVSTOP-LAB/CSM-API-String-Arguments-Support/total)](https://github.com/NEVSTOP-LAB/CSM-API-String-Arguments-Support/releases)
 
-该库用于增强通信状态机（CSM）的API参数功能，支持以纯文本格式传递各种数据类型，且特别优化了手动输入体验。
+本库扩展了 [CSM](https://github.com/NEVSTOP-LAB/Communicable-State-Machine)（通信状态机）框架的 API 参数功能，支持以纯文本格式传递各种数据类型。
 
-库中提供了两个新的CSM模板，它们都包含"Data: Get Configuration"和"Data: Set Configuration"两个内置状态，用于访问存储在'>> internal data >>'移位寄存器中的配置数据。
+库中还附带两个 CSM 模板，内置 `Data: Get Configuration`、`Data: Set Configuration` 和 `Data: Get Internal Data` 状态，可作为构建需要读写 `>> internal data >>` 移位寄存器数据的 CSM 模块的起点。
 
 ![example](.github/doc.png)
 
@@ -17,24 +17,24 @@
 
 - 字符串 (String)
 - 路径 (Path)
-- 布尔值 (Boolean)
 - 标签 (Tag)
-- 引用号 (Refnum，包括IVI/VISA/UserDefinedRefnumTag)
-- 整数 (I8,I16,I32,I64,U8,U16,U32,U64)
+- 引用号 (Refnum，包括 IVI/VISA/UserDefinedRefnumTag)
+- 布尔值 (Boolean)
+- 整数 (I8, I16, I32, I64, U8, U16, U32, U64)
 - 浮点数 (DBL/SGL)
 - 复数 (DBL/SGL)
 - 时间戳 (Timestamp)
 - 枚举 (Enum)
 - 数组 (Array)
 - 簇 (Cluster)
-- 其他类型 (使用CSM-Hexstr表示)
+- 其他类型 (使用 CSM-Hexstr 表示)
 
 ### 字符串(String)/路径(Path)/引用号(Refnum)/标签(Tag)
 
-字符串和路径类型遵循CSM的规则，特殊字符如'->|'、'->'、'-@'、'-&'、'>>'、','和';'在传递前会自动转换为%[十六进制]字符串，效果等同于使用**CSM AdvanceAPI\CSM Make String Arguments Safe.vi**。
+字符串和路径类型中，CSM 关键字（`->|`、`->`、`-@`、`-&`、`>>`、`,`、`;`）在传递前会自动转换为 `%[十六进制]` 字符串，效果等同于 **CSM AdvanceAPI\CSM Make String Arguments Safe.vi**。
 
 > [!NOTE]
-> LabVIEW的引用号(Refnum，包括IVI/VISA/UserDefinedRefnumTag)和标签(Tag)也支持，转换规则与String类型相同。
+> 引用号（Refnum，包括 IVI/VISA/UserDefinedRefnumTag）和标签（Tag）的转换规则与 String 类型相同。
 
 ### 布尔值(Boolean)
 
@@ -45,6 +45,7 @@
   - True/False
   - On/Off
   - Enable/Disable
+  - Active/Inactive
   - valid/Invalid
   - 1/0
   - Open/Close
@@ -169,31 +170,31 @@ _**特殊情况说明**_:
 
 ### 枚举(Enum)
 
-`Indexed Enum` 定义为 [索引编号(index)][分隔符(separator)][枚举字符串] 格式的字符串。支持以下表达方式：
+`Indexed Enum` 定义为 `[索引编号][分隔符][枚举字符串]` 格式的字符串。支持以下表达方式：
 
-> 十进制数字作为索引，== 作为分隔符：
->
-> - 1 == boolean
-> - 2 == string
-> - 4 == dbl
-> - 8 == number
->
-> 十六进制数字作为索引，-- 作为分隔符：
+> 十六进制索引，`--` 作为分隔符：
 >
 > - 0x01 -- boolean
 > - 0x02 -- string
 > - 0x04 -- dbl
 > - 0x08 -- number
 >
-> 二进制数字作为索引，__ 作为分隔符：
+> 二进制索引，`__` 作为分隔符：
 >
 > - 0b0001 __ boolean
 > - 0b0010 __ string
 > - 0b0100 __ dbl
 > - 0b1000 __ number
+>
+> 十进制索引，`==` 作为分隔符：
+>
+> - 1 == boolean
+> - 2 == string
+> - 4 == dbl
+> - 8 == number
 
 > [!NOTE]
-> 索引编号(index)支持所有整数的表达方式。
+> 索引编号支持所有整数的表达方式。
 
 _**转换规则1: 没有索引编号时**_
 
@@ -215,10 +216,10 @@ _**转换规则2：包含索引编号时**_
 - 字符串 "9 - CCCC" 将转换为 Enum(9 - CCCC)，数字值为 2
 
 > [!NOTE]
-> - String matching is case-insensitive.
-> - String matching performs regular expression matching starting from the first element in the enum list until the first match is found. Therefore, partial writing is supported.
->     For example: 0x00 -- Spring | 0x01 -- Summer | 0x02 -- Autumn | 0x03 -- Winter
->     The input string "aut" will match to "Autumn".
+> - 字符串匹配不区分大小写。
+> - 字符串匹配采用正则表达式，从枚举列表第一个元素开始依次匹配，直到找到第一个符合项为止，因此支持部分匹配。
+>     例如枚举为：0x00 -- Spring | 0x01 -- Summer | 0x02 -- Autumn | 0x03 -- Winter
+>     输入字符串 "aut" 将匹配到 "Autumn"。
 
 ### 数组(Array)
 
@@ -254,15 +255,16 @@ a2 b2 c2 d2 e2
 
 ### 簇(Cluster)
 
-**转换规则1: 标签-数据对(Tag:Value)模式**
+**转换规则1：标签-数据对(Tag:Value)模式**
 
-在标签-数据对模式下，输入字符串由多个标签-数据对组成，冒号(:)用于分隔标签和数据，分号(;)用于分隔不同元素。花括号({ 和 })用作边界符号。对于非复杂的混合数据类型，花括号可以省略。其他规则如下：
+在标签-数据对模式下，输入字符串由多个 `标签:值` 对组成，冒号（`:`）分隔标签与值，分号（`;`）分隔不同元素对。花括号（`{` 和 `}`）为边界符，简单数据类型可省略。其他规则如下：
 
-- 标签对应簇中元素的名称，值会根据对应元素的数据类型进行转换。
-- 只需描述需要修改的元素，与数据原型一致的元素可以省略。
-- 通过名称匹配元素，顺序无关紧要。
-- 对于嵌套簇，子簇元素的标签格式为"父簇标签.子簇元素标签"。
-- 嵌套簇中，如果子簇元素的标签名称唯一，可以省略父簇的标签。
+- 标签对应簇中元素的名称，值根据对应元素的数据类型进行转换。
+- 只需描述需要修改的元素，与原型值一致的元素可省略。
+- 通过名称匹配元素，顺序无关。
+- 对于嵌套簇，子簇元素的标签格式为 `父簇标签.子簇元素标签`。
+- 若子簇元素标签在整个簇中唯一，可省略父簇标签。
+- 若未提供标签，则输入字符串将转换为簇的第一个元素，方便优先设置第一个元素。
 
 **示例:**
 
@@ -286,7 +288,7 @@ typedef cluster{
 >
 > `{subCluster.b2:On}` 表示将簇中子簇的布尔类型数据 `b2` 设置为 TRUE。其他元素的值保持原型输入值不变。由于 `b2` 是唯一的，可以省略父簇标签，直接使用 `b2:On` 也表示相同的转换。
 
-**转换规则2: 无标签模式**
+**转换规则2：无标签模式**
 
 对于簇，也支持仅输入数据字符串，各值之间用分号分隔。
 

@@ -4,12 +4,12 @@
 
 [![Installs](https://www.vipm.io/package/nevstop_lib_csm_api_string_arguments_support/badge.svg?metric=installs)](https://www.vipm.io/package/nevstop_lib_csm_api_string_arguments_support/)
 [![Stars](https://www.vipm.io/package/nevstop_lib_csm_api_string_arguments_support/badge.svg?metric=stars)](https://www.vipm.io/package/nevstop_lib_csm_api_string_arguments_support/)
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Downloads](https://img.shields.io/github/downloads/NEVSTOP-LAB/CSM-API-String-Arguments-Support/total)](https://github.com/NEVSTOP-LAB/CSM-API-String-Arguments-Support/releases)
 
-This library enhances the API parameters for the Communicable State Machine (CSM) framework by enabling the inclusion of various data types in plain text format and is specially optimized for manual input experience.
+This library extends the [CSM](https://github.com/NEVSTOP-LAB/Communicable-State-Machine) (Communicable State Machine) framework's API parameters to support various data types in plain text format.
 
-The library also provides two additional templates that include "Data: Get Configuration" and "Data: Set Configuration" states. These templates serve as a starting point for building CSM modules with the ability to access data stored in the '>> internal data >>' shift register.
+It also includes two templates with built-in `Data: Get Configuration`, `Data: Set Configuration`, and `Data: Get Internal Data` states — a ready-to-use starting point for CSM modules that need to read and write data in the `>> internal data >>` shift register.
 
 ![example](.github/doc.png)
 
@@ -310,4 +310,4 @@ In Non-Tag mode, the input string consists only of data values separated by semi
 
 ### Other Data Types
 
-Other data types are first converted to variants and then transformed using CSM-HexStr.
+Other data types are treated as variants and transformed using CSM-HexStr.
